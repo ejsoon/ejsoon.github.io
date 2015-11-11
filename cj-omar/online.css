@@ -1,0 +1,88 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+}
+body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	background-color:#acf;
+	text-align:center;
+}
+div {
+	position:relative;
+	margin:10px auto;
+}
+#whole_board {
+	margin:40px auto;
+	display:inline-block;
+	padding: 0px 20px 20px 20px;
+	text-align:center;
+	background-color:#5c017a;
+	font-size:18px;
+}
+#up_board {
+}
+#input_board {
+}
+#function_area {
+	text-align:left;
+}
+textarea {
+}
+#input_area {
+	width:400px; min-width:400px;
+	height:200px; min-height:200px;
+	font-size:18px;
+}
+span {
+}
+#welcome {
+	color:white;
+}
+input {
+	position:relative;
+	margin:0px;
+}
+#cc_code {
+	font-size:18px;
+	font-weight:bold;
+	width:95px;
+	color:black;
+	background-color:white;
+}
+#select_idiom {
+	margin-left:2px;
+	font-size:18px;
+	font-weight:bold;
+	width:165px;
+	color:black;
+	background-color:white;
+}
+button {
+}
+#input_mode_button {
+	margin-left:2px;
+	padding:0px;
+	font-size:18px;
+	font-weight:bold;
+	height:30px;
+	width:50px;
+	color:black;
+}
+#help {
+	padding:0px;
+	font-size:18px;
+	font-weight:bold;
+	height:30px;
+	width:50px;
+	color:black;
+	float:right;
+}
+.font_TWSung {
+	font-family:TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+}
+.font_HanaMin {
+	font-family:HanaMinA,HanaMinB,HanaMinPlus,TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,MingLiU,MingLiU-ExtB,Serif;
+}

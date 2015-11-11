@@ -1,0 +1,45 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+}
+body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	background-color:#acf;
+	text-align:center;
+}
+div {
+	position:relative;
+	margin:10px auto;
+}
+#whole_div {
+	font-size:60px;
+}
+.intro {
+	font-size:30px;
+	font-family:TW-Kai,TW-Kai-Ext-B,TW-Kai-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+}
+#title {
+	font-size:80px;
+}
+#mid-content {
+	width:100%;
+	text-align:center;
+}
+#content {
+	width:80%;
+	padding:4%;
+	text-align:left;
+	background-color:#caa;
+}
+.font_TWKai {
+	font-family:TW-Kai,TW-Kai-Ext-B,TW-Kai-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+}
+.font_TWSung {
+	font-family:TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+}
+.font_HanaMin {
+	font-family:HanaMinA,HanaMinB,HanaMinPlus,TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,MingLiU,MingLiU-ExtB,Serif;
+}

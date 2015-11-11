@@ -1,0 +1,28 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+}
+body {
+	height:100%;
+	width:100%;
+	margin:0px;
+	background-color:#acf;
+	text-align:center;
+}
+div {
+	position:relative;
+	margin:0px;
+}
+#whole_div {
+	text-align:center;
+	font-size:100px;
+	border:2px double purple;
+}
+#cc_code {
+	width:100%;
+	height:10px;
+}
+.font_HanaMin {
+	font-family:HanaMinA,HanaMinB,HanaMinPlus,TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,MingLiU,MingLiU-ExtB,Serif;
+}

@@ -1,0 +1,32 @@
+.divi_f_topical {
+	position:relative;
+	float:right;
+	width:70%;
+	max-width:965px;
+	height:400px;
+	margin-top:40px;
+	border-top:2px solid #5c017a;
+	font-size:30px;
+	overflow:auto;
+}
+.divi_f_title {
+	position:relative;
+	float:right;
+	width:30px;
+	margin-right:30px;
+	background-color:#302;
+	color:#FFF;
+	display:inline-block;
+	vertical-align:top;
+}
+.divi_f_content {
+	position:relative;
+	margin-right:80px;
+	vertical-align:top;
+}
+.divi_f_min {
+	position:relative;
+	float:right;
+	width:30px;
+	margin:20px 10px;
+}
