@@ -1,0 +1,114 @@
+body {
+	position:relative;
+	margin:0px;
+	background-color:#071224;
+	background: linear-gradient(to bottom,#071224, #071224, #071224, #4e547e);
+	text-align:left;
+}
+div {
+}
+#light_effection {
+	position:fixed;
+	margin:0px;
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+	opacity:0.7;
+	z-index:100;
+	display:none;
+}
+#whole_div {
+	position:relative;
+	margin:0 auto;
+	width:1280px;
+	height:2060px;
+	border-left:2px solid #5c017a;
+	border-right:2px solid #5c017a;
+	background-image:url(pictures/starandlight.png);
+	/*overflow:hidden;*/
+	z-index:1;
+}
+#bottom_div {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:100px;
+}
+img {
+}
+a img {
+	border:none;
+}
+#icon {
+	float:left;
+	height:80px;
+}
+#html5 {
+	float:left;
+}
+#by-nc-nd {
+	margin:20px;
+	float:left;
+}
+#yk_hvno {
+	position:absolute;
+	margin:680px 860px;
+}
+#hommn_hvno {
+	position:absolute;
+	margin:1080px 1080px;
+}
+#lp_hvno {
+	position:absolute;
+	margin:1480px 580px;
+}
+#oymr_hvno {
+	position:absolute;
+	margin:780px 35px;
+}
+#hqm_hvno {
+	position:absolute;
+	margin:880px 245px;
+}
+#pt_hvno {
+	position:absolute;
+	margin:660px 355px;
+}
+#mg_hvno {
+	position:absolute;
+	margin:1060px 85px;
+}
+.oymr_hvno_none {
+	display:none;
+}
+.oymr_hvno_anim {
+	display:inline;
+	animation:runout 2s ease-out 0s 1;
+	-webkit-animation:runout 2s ease-out 0s 1;
+}
+#title_img6 {
+	position:absolute;
+	right:0px;
+	width:80px;
+	margin-top:10px;
+	animation:runright 25s ease-out 0s infinite;
+	-webkit-animation:runright 25s ease-out 0s infinite;
+}
+@keyframes runright {
+	0% {right:30px;opacity:0.3;}
+	20% {right:0px;opacity:1;}
+	90% {right:0px;opacity:1;}
+	100% {right:0px;opacity:0;}
+}
+@-webkit-keyframes runright {
+	0% {right:30px;opacity:0.3;}
+	20% {right:0px;opacity:1;}
+	90% {right:0px;opacity:1;}
+	100% {right:0px;opacity:0;}
+}
+@keyframes runout {
+	0% {margin:780px 35px;opacity:0.3;}
+}
+@-webkit-keyframes runout {
+	0% {margin:780px 35px;opacity:0.3;}
+}
