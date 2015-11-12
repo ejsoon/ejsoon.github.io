@@ -24,16 +24,13 @@ body {
 	margin-top:-1px;
 	height:1px;
 	clear:both;
-	border:1px solid red;
 }
 div {
 }
 #yk_switch_pic {
 	position:relative;
-	display:inline-block;
+	float:left;
 	margin-top:40px;
-	margin-left:auto;
-	margin-right:auto;
 	width:582px;
 	height:413px;
 	overflow:hidden;
@@ -84,17 +81,45 @@ div {
 	background-color:#4e547e;
 	padding:10px 0px;
 }
+#cj_odye {
+	
+}
+.six_detail {
+	position:absolute;
+	display:none;
+	width:420px;
+	right:30px;
+	bottom:10px;
+	font-size:30px;
+}
+#six_big {
+	position:absolute;
+	width:120px;
+	margin-top:80px;
+	margin-left:80px;
+	font-size:120px;
+}
 #six_div {
 	position:relative;
-	width:300px;
-	height:300px;
-	display:inline-block;
-	background-image:url(../pictures/six_bg.png);
+	width:740px;
+	height:413px;
+	margin-top:40px;
+	float:right;
+	background-image:url(../pictures/six_bg2.png);
 }
-.clear_float {
-	margin-top:-1px;
-	height:1px;
-	clear:both;
+.six_single {
+	position:relative;
+	width:40px;
+	height:109px;
+	margin-top:40px;
+	margin-left:30px;
+	margin-right:10px;
+	font-size:34px;
+	color:white;
+	float:right;
+	cursor:crosshair;
+	background-image:url(../pictures/six_single.png);
+}
 }
 img {
 }
@@ -171,6 +196,4 @@ img {
 .divi_f_min {
 	position:relative;
 	float:right;
-	width:30px;
-	margin:20px 10px;
 }

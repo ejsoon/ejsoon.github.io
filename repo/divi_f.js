@@ -1,16 +1,16 @@
-function divi_f_c(the_id, cha_length) {
+function divi_f_i(the_id, cha_length, margin) {
 	var divi_f_content = document.getElementById(the_id);
-	divi_f_go(divi_f_content, cha_length);
+	divi_f_go(divi_f_content, cha_length, margin);
 }
-function divi_f_c(cha_length) {
-	var divi_f_content = document.getElementsByClassName("divi_f_content");
+function divi_f_c(the_class, cha_length, margin) {
+	var divi_f_content = document.getElementsByClassName(the_class);
 	var content_num = divi_f_content.length;
 	for (var num = 0; num < content_num; num++) {
-		divi_f_go(divi_f_content[num], cha_length);
+		divi_f_go(divi_f_content[num], cha_length, margin);
 	}
 }
 
-function divi_f_go(the_content, cha_length) {
+function divi_f_go(the_content, cha_length, margin) {
 	var in_str = "";
 	var sub_str = ""; //use many times 
 	var app_str = ""; //use many times 
@@ -50,6 +50,7 @@ function divi_f_go(the_content, cha_length) {
 			divi_f_min.push(document.createElement("div"));
 			divi_f_min[divi_f_min_n].innerHTML = app_str;
 			divi_f_min[divi_f_min_n].className = "divi_f_min";
+			divi_f_min[divi_f_min_n].style.margin = margin;
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			n++;
 			divi_f_min_n++;
