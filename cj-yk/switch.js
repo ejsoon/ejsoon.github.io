@@ -84,7 +84,7 @@ function lit_div_out() {
 }
 
 function set_timer() {
-	timerSwitch=setInterval("timer_switch_pic()",7100);
+	timerSwitch=setInterval("timer_switch_pic()",15100);
 }
 
 function clear_timer() {

@@ -1,29 +1,8 @@
 html {
-	position:relative;
 	margin:0px;
-	width:100%;
-	height:100%;
 }
 body {
-	position:relative;
 	margin:0px;
-	width:100%;
-	height:100%;
-	overflow:auto;
-}
-.color_red {
-	color:#f00;
-}
-.color_white {
-	color:#fff;
-}
-.color_bg {
-	color:#fff;
-}
-.clear_float {
-	margin-top:-1px;
-	height:1px;
-	clear:both;
 }
 div {
 }
@@ -39,6 +18,40 @@ div {
 	background-image:url(../pictures/starandlight.png);
 	background-position:0px -800px;
 }
+#whole_div {
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	max-width:1366px;
+	text-align:center;
+	z-index:1;
+}
+
+/* 做頭
+*/
+
+.color_red {
+	color:#f00;
+}
+.color_white {
+	color:#fff;
+}
+.color_bg {
+	color:#fff;
+}
+.clear_float {
+	margin-top:-1px;
+	height:1px;
+	clear:both;
+}
+.vertical_middle {
+	position:relative;
+	margin-left:-1px;
+	width:1px;
+	height:100%;
+	vertical-align:middle;
+	display:inline-block;
+}
 #light_effection {
 	position:fixed;
 	margin:0px;
@@ -49,14 +62,6 @@ div {
 	z-index:100;
 	display:none;
 }
-#whole_div {
-	position:relative;
-	margin:0 auto;
-	width:100%;
-	max-width:1366px;
-	text-align:center;
-	z-index:1;
-}
 #head_div {
 	position:relative;
 	margin:0px;
@@ -65,6 +70,29 @@ div {
 	background-color:#071224;
 	background-image:url(../pictures/starandlight.png);
 	background-position:0px -500px;
+}
+#title_img6 {
+	position:relative;
+	float:right;
+	width:80px;
+	animation:runright 25s ease-out 0s infinite;
+	-webkit-animation:runright 25s ease-out 0s infinite;
+}
+#head_main_out {
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+#head_main {
+	position:relative;
+	width:50%;
+	vertical-align:middle;
+	display:inline-block;
+}
+#cj_yk_hvno {
+	position:relative;
+	float:right;
 }
 #bottom_div {
 	position:relative;
@@ -81,6 +109,34 @@ div {
 	background-color:#4e547e;
 	padding:10px 0px;
 }
+#icon {
+	float:left;
+	height:80px;
+}
+#html5 {
+	float:left;
+}
+#by-nc-nd {
+	margin:20px;
+	float:left;
+}
+@keyframes runright {
+	0% {right:30px;opacity:0.3;}
+	20% {right:0px;opacity:1;}
+	90% {right:0px;opacity:1;}
+	100% {right:0px;opacity:0;}
+}
+@-webkit-keyframes runright {
+	0% {right:30px;opacity:0.3;}
+	20% {right:0px;opacity:1;}
+	90% {right:0px;opacity:1;}
+	100% {right:0px;opacity:0;}
+}
+
+/*頭尾
+*/
+
+
 #cj_odye {
 	
 }
@@ -107,7 +163,7 @@ div {
 	float:right;
 	background-image:url(../pictures/six_bg2.png);
 }
-.six_single {
+.six_single, .six_single_selected {
 	position:relative;
 	width:40px;
 	height:109px;
@@ -118,8 +174,12 @@ div {
 	color:white;
 	float:right;
 	cursor:crosshair;
+}
+.six_single {
 	background-image:url(../pictures/six_single.png);
 }
+.six_single_selected, .six_single:hover {
+	background-image:url(../pictures/six_single2.png);
 }
 img {
 }
@@ -131,41 +191,6 @@ img {
 	width:29%;
 	max-width:400px;
 	max-height:400px;
-}
-#title_img6 {
-	position:relative;
-	float:right;
-	width:80px;
-	animation:runright 25s ease-out 0s infinite;
-	-webkit-animation:runright 25s ease-out 0s infinite;
-}
-#cj_yk_hvno {
-	position:absolute;
-	left:30px;
-	bottom:5px;
-}
-#icon {
-	float:left;
-	height:80px;
-}
-#html5 {
-	float:left;
-}
-#by-nc-nd {
-	margin:20px;
-	float:left;
-}
-@keyframes runright {
-	0% {right:30px;opacity:0.3;}
-	20% {right:0px;opacity:1;}
-	90% {right:0px;opacity:1;}
-	100% {right:0px;opacity:0;}
-}
-@-webkit-keyframes runright {
-	0% {right:30px;opacity:0.3;}
-	20% {right:0px;opacity:1;}
-	90% {right:0px;opacity:1;}
-	100% {right:0px;opacity:0;}
 }
 .divi_f_topical {
 	position:relative;
@@ -192,8 +217,4 @@ img {
 	position:relative;
 	margin-right:80px;
 	vertical-align:top;
-}
-.divi_f_min {
-	position:relative;
-	float:right;
 }
