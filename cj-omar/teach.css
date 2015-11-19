@@ -15,7 +15,7 @@ div {
 	margin:10px auto;
 }
 #whole_div {
-	font-size:60px;
+	font-size:30px;
 }
 .intro {
 	font-size:30px;
@@ -23,6 +23,7 @@ div {
 }
 #title {
 	font-size:80px;
+	border-bottom:2px solid black;
 }
 #mid-content {
 	width:100%;
@@ -34,12 +35,22 @@ div {
 	text-align:left;
 	background-color:#caa;
 }
-.font_TWKai {
-	font-family:TW-Kai,TW-Kai-Ext-B,TW-Kai-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+#content_table {
+	display:inline-block;
+	border:1px solid black;
+	border-collapse:collapse;
 }
-.font_TWSung {
-	font-family:TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,HanaMinA,HanaMinB,HanaMinPlus,MingLiU,MingLiU-ExtB,Serif;
+#content_table td{
+	border:1px solid purple;
+	padding:10px;
 }
-.font_HanaMin {
-	font-family:HanaMinA,HanaMinB,HanaMinPlus,TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,MingLiU,MingLiU-ExtB,Serif;
+.font_Kai {
+	font-family:TW-Kai,TW-Kai-Ext-B,TW-Kai-Plus,DFKai-SB,Serif;
+}
+.font_Sung {
+	font-family:TW-Sung,TW-Sung-Ext-B,TW-Sung-Plus,MingLiU,MingLiU-ExtB,Serif;
+}
+.font_Hei {
+	font-family:HanaMinA,HanaMinB,HanaMinPlus,Microsoft JhengHei,Serif;
+MingLiU,MingLiU-ExtB
 }

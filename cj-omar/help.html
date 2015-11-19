@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>雅虎奇摩在綫_help</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./help.css"/>
+	</head>
+	<body onload="body_onload()">
+		<div id="whole">
+			<div id="header">
+				<img id="head1" src="./pictures/help_head.png"/>
+			</div>
+			<div id="navigation">
+				<div class="navigation_outside" style="width:10%;">
+					<img class="nav_background" src="./pictures/wdd4.png" />
+					<div class="navigation_inside">
+						<span class="mid_ver"></span><a id="button1" href="#switch_topical1" class="mid1" onclick="button_topical(this.hash)">按鍵</a>
+					</div>
+				</div>
+				<div class="navigation_outside" style="width:28%;">
+					<img class="nav_background" src="./pictures/wdd4.png" />
+					<div class="navigation_inside">
+						<span class="mid_ver"></span><a id="button2" href="#switch_topical2" class="mid2" onclick="button_topical(this.hash)">爲什麼是雅虎奇摩</a>
+					</div>
+				</div>
+				<div class="navigation_outside" style="width:32%;">
+					<img class="nav_background" src="./pictures/wdd4.png" />
+					<div class="navigation_inside">
+						<span class="mid_ver"></span><a id="button3" href="#switch_topical3" class="mid2" onclick="button_topical(this.hash)">爲什麼是在綫輸入法</a>
+					</div>
+				</div>
+				<div class="navigation_outside" style="width:15%;">
+					<img class="nav_background" src="./pictures/wdd4.png" />
+					<div class="navigation_inside">
+						<span class="mid_ver"></span><a id="button4" href="#switch_topical4" class="mid2" onclick="button_topical(this.hash)">資源下載</a>
+					</div>
+				</div>
+				<div class="navigation_outside" style="width:15%;">
+					<img class="nav_background" src="./pictures/wdd4.png" />
+					<div class="navigation_inside">
+						<span class="mid_ver"></span><a id="button5" href="#switch_topical5" class="mid2" onclick="button_topical(this.hash)">倉頡之友</a>
+					</div>
+				</div>
+			</div>
+			<div style="width:100%;height:1px;margin-top:-1px;clear:both;"></div>
+			<div id="topical">
+				<div style="width:100%;height:1px;margin-top:-1px;"></div>
+				<div id="topical1">
+					<table id="keyboard_list" border="0">
+						<tr><th>基本按鍵</th><th></th></tr>
+						<tr><td>　{a-z}</td><td>輸入倉頡編碼</td></tr>
+						<tr><td>　{Space/2/3/4}</td><td>選字上屏</td></tr>
+						<tr><td>　{1/5}或{PgUp/PgDn}</td><td>重碼翻頁</td></tr>
+						<tr><td>　{Backspace}</td><td>刪除上一個編碼</td></tr>
+						<tr><td>　{Enter}或{Esc}</td><td>清空編碼</td></tr>
+						<tr><th><br />模式切換</th><th></th></tr>
+						<tr><td>　{Shift}或{倉頡/EN}按鈕</td><td>切換中英狀態</td></tr>
+						<tr><td>　{Ctrl}+{,}</td><td>切換字體(TW-Sung/HanaMin)</td></tr>
+						<tr><td>　{Ctrl}+{.}</td><td>切換半角/全形標點</td></tr>
+						<tr><td><span class="bold_red">　{Ctrl}+{;}</span></td><td><span class="bold_red">查詢倉頡編碼/返回</span></td></tr>
+						<tr><td>　{Ctrl}+{'}</td><td>空格模式(空碼無效/清空編碼)</td></tr>
+						<tr><th><br />窗體調整</th><th></th></tr>
+						<tr><td>　{Ctrl}+{1/3}</td><td>寬度增加/減少40px</td></tr>
+						<tr><td>　{Ctrl}+{2/4}</td><td>高度增加/減少40px</td></tr>
+						<tr><td>　{Ctrl}+{5}</td><td>輸入框大小還原</td></tr>
+						<tr><td>　{Ctrl}+{6/8}</td><td>上移頂端/下移原位</td></tr>
+						<tr><td>　{Ctrl}+{7/9}</td><td>移至左端/保持居中</td></tr>
+					</table>
+					<br />
+					<p class="keyhelp_title">==按鍵理由==</p>
+					<ul>
+						<li>用到{234}來輸入重碼，因爲這三個鍵分別由最長的三隻手指(無名指|中指|食指)來控制。</li>
+						<li>實用中最多用到第四個重碼，所以我把{5}定爲向後翻頁，由於已經有了空格輸入首位漢字，數字{1}則定爲向前翻頁。</li>
+						<li>若重碼字超過四個，則出現可向後翻頁提示{&#62;}。翻頁後，出現可向前翻頁提示{&#60;}。</li>
+						<li>本作中{Enter}不是英文輸入，亦不是首碼上屏，而是與{Esc}同爲清空編碼。由於{Esc}較遠，故建議使用{Enter}。若要輸入英文請切換至英文模式。</li>
+					</ul>
+					<br />
+					<p class="keyhelp_title">==模式轉換==</p>
+					<ul>
+						<li>切換的字體爲{TW-Sung/HanaMin}，若本機無此字型檔，請移步至本網<a href="#switch_topical4" onclick="button_topical(this.hash)">下載區</a>。</li>
+						<li>中文標點衹限於{，。}這兩個，若仍有常使用到全形標點的需求，可以參考<a href="http://www.scj2000.com/tutorials.html#%E5%80%89%E9%A0%A1%E8%BC%B8%E5%85%A5%E6%B3%95%E7%9A%84%E5%8F%96%E7%A2%BC%E6%96%B9%E6%B3%95%EF%BC%9A" target="_blank">快倉2000:倉頡輸入法教學</a>:{D. 倉頡輸入法的標點和特殊符號取碼}。</li>
+						<li>目前字體顯示的測試結果:Firefox/Chrome/Opera顯示正常，IE/Safari/Opera(for Linux)似乎不能向後檢索字體。</li>
+						<li>查詢倉頡編碼之時，Firefox/Chrome/Opera/Safari可以自動顯示框內新增字符的編碼，<span class="bold_red">但IE8及之前版本要再按一下{Enter}</span>。</li>
+						<li>空格模式的空碼無效，即當所輸入的編碼沒有相符漢字時，按空格不會清空編碼。切換爲"清空編碼"後，當沒有對應編碼的漢字時，按下空格編碼會被清空。</li>
+					</ul>
+					<br />
+					<p class="keyhelp_title">==調整大小==</p>
+					<ul>
+						<li>Firefox/Chrome/Opera/Safari都可以方便地用鼠標對輸入框的大小進行調整，IE不能。</li>
+						<li>所有瀏覽器均可以通過{Ctrl}+{1/2/3/4/5}來調整輸入框的大小。</li>
+						<li>一般可以通過{Ctrl}+{+/-}來對瀏覽器的圖文顯示進行放大/縮小，{Ctrl}+{0}還原縮放。</li>
+					</ul>
+					<br />
+					<p class="keyhelp_title">==本網特色==</p>
+					<ul>
+						<li>全手寫html+css+javascript，採用ajax技術加載雅虎奇摩倉頡碼表cin檔。</li>
+						<li>爲增加網頁打開速度，在基本輸入框頁面不加載任何圖片。</li>
+						<li>本網對主流瀏覽器(Firefox/Chrome/Opera/Safari/IE)均做測試。</li>
+						<li>程式設計全部由本人原創完成，搜索所得的信息或代碼段，全部爲網路公開的且無版權聲明的知識和訊息。</li>
+						<li>本網頁程式以"保留作者名字|非商業使用|請勿更改"的方式進行分享，作者名字爲"尹杉|Ejsoon Yang"。</li>
+					</ul>
+					<br />
+					<p class="keyhelp_title">==更新歷史==</p>
+					<ul>
+						<li>2015-9-17:增加代碼使空格清空編碼模式鎖定中文輸入</li>
+						<li>2015-9-8:更改online.css，用正確的方式居中，更正幫助手冊部分錯字</li>
+						<li>2015-3-19:增加倉頡之劫下載，改寫部分幫助手冊內容，改網頁文檔名爲online，下載更換爲github_Raw</li>
+						<li>2015-2-9:使得單按Shift切換中英文在任何情況均有效,去掉cookie保存文本功能</li>
+						<li>2015-2-4:更改button樣式,使其文字在所有瀏覽器居中</li>
+						<li>2015-2-3:增加cookie實時保存功能，重寫部分幫助手冊內容</li>
+						<li>2015-1-30:增加代碼,實現有倉頡碼輸入時不能輸入標點和數字</li>
+						<li>2015-1-28:幫助手冊網頁製作和撰寫完成</li>
+						<li>2015-1-21:其他功能(Ctrl功能)編寫完成</li>
+						<li>2015-1-16:基本輸入功能編寫完成</li>
+					</ul>
+					<br />
+				</div>
+				<div id="topical2">
+					<p>雅虎奇摩倉頡在三代的基礎上，結合五代做了大量的碼表修訂工作，使其取碼更爲科學，合乎現今的字型標準。惟有領略了雅虎奇摩在倉頡編碼上的作爲，才能更深一層地理解:輸入法本身係爲了人們更準確方便地輸入漢字，它可以也必須更加地聰明和靈活。</p>
+					<span class="bold_red">&#60;section1/4 倉頡之劫的活路&#62;</span><br />
+					以下內容摘自&#60;&#60;倉頡之劫<a href="https://github.com/ejsoonyang/books_store/raw/master/my_topical/%E5%80%89%E9%A0%A1%E4%B9%8B%E5%8A%AB(2014-9-22).pdf" target="_blank">&#8595;</a>&#62;&#62;:<br />
+					「在這些倉頡輸入法中,我找到了一個我認爲至今最完善的倉頡:雅虎奇摩輸入法.奇摩倉頡根據現代正體字形重製了編碼,例如:<br />
+					<div class="vs_whole">
+						<div class="vs_cell">
+							<br />片:<br />反:<br />致:<br />丟:<br />今:<br />舔:
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">原三代編碼</span><br />中中一中<br />竹水<br />一土人大<br />竹土戈<br />人戈弓<br />竹口竹大心
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">改良三代編碼</span><br />中中一弓<br />一水<br />一土竹水<br />一土戈<br />人一弓<br />一口一大心
+						</div>
+						<div style="width:100%;height:1px;margin-top:-1px;clear:left;"></div>
+					</div>
+					值得一提的是,奇摩接受了五代新增的輔助字形[水]作爲可選的容錯碼,但不接受[卜卜]這個多餘的輔助字形:<br />
+					<div class="vs_whole">
+						<div class="vs_cell">
+							<br />屬:<br />犀:<br />面:<br />非:<br />
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">原三代編碼</span><br />尸卜卜戈<br />尸卜卜手<br />一田卜中<br />中一卜卜卜<br />
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">改良三代編碼</span><br />尸水田戈<br />尸水竹手<br /><br /><br />
+						</div>
+						<div style="width:100%;height:1px;margin-top:-1px;clear:left;"></div>
+					</div>
+					奇摩輸入法開源後,我們可以獲得其倉頡碼表,方便了用戶在各種輸入法平臺,在不同的作業系統使用.」<br />
+					<br />
+					<span class="bold_red">&#60;section2/4 新的正確編碼&#62;</span><br />
+					以下爲本人目前統計的雅虎奇摩新增容錯碼:<br />
+					<br />
+					<div class="vs_whole">
+						<div class="vs_cell">
+							<br />考:<br />鼠:<br />幾:<br />致:<br />黃:<br />腐:<br />麥:
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">倉頡編碼</span><br />十大尸尸<br />竹難卜心女<br />女戈人<br />一土竹水<br />廿一田金<br />戈戈人月人<br />十人弓戈
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">&#160;&#160;例字</span><br />(拷銬烤)<br />(竄攛)<br />(機譏)<br />(緻)<br />(簧橫)<br /><br />(麵麪麩)
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">&#160;&#160;&#160;注解</span><br /><br /><br /><br /><br />(五代亦有)<br />(同三代)<br />(同三代)
+						</div>
+					</div>
+					<div style="width:100%;height:1px;margin-top:-1px;clear:left;"></div>
+					<br />
+					<div class="vs_whole">
+						<div class="vs_cell">
+							<br />廴:<br />虫:<br />亼:<br />一:<br />⺶:<br />车:
+						</div>
+						<div class="vs_cell">
+							<span class="color_373">編碼</span><br />弓水<br />中戈<br />人一<br /><br />廿竹<br />心手
+						</div>
+						<div class="vs_cell">
+					<span class="color_373">&#160;&#160;&#160;例字</span><br />(廷庭挺建鍵)<br />(融蜚蛋蝕蚤)<br />(今含令倉搶蒼食養)<br />(壬反返次姿恣勻均)<br />(差嗟搓羞)<br />(转轴辈连辅)
+						</div>
+					</div>
+					<div style="width:100%;height:1px;margin-top:-1px;clear:left;"></div>
+					<br />
+					最後就是以下三字:[师狮将]，希望讀到本文的朋友，親自使用本輸入法的查詢功能來查此三字的編碼，並用TW-Sung標準字體來理解這樣取碼的理由。漢字被簡化後，一些字型也隨之改變了。<br />
+					<br />
+					<span class="bold_red">&#60;section3/4 開源真好&#62;</span><br />
+					<span class="color_373">網友發問:</span><br />
+					可惜奇摩輸入法本身已經不再繼續了，移到GitHub的KeyKey專案又不活躍。<br />
+					前景堪憂 ...<br />
+					<br />
+					<span class="color_373">我答:</span><br />
+					一個輸入法,就應單純地輸入漢字,根本不需要投入這麼多人力時間資源.<br />
+					據瞭解,一些常更新的輸入法,基本都投入在拼音詞庫和各種贅餘功能.這些都是倉頡不需要的.<br />
+					奇摩雖然很久不更新,但目前爲止,在我所使用過的倉頡輸入法程式裡面,它確實仍是最好用的.<br />
+					<br />
+					我曾經用過某頻繁更新的輸入法,它更新版本所解決的問題,我遇不到,連特意重現也無法做到.可是自己想要的功能和穩定,作者卻始終無法滿足.<br />
+					在軟體的使用上,我也一直認爲不需要迷信新版本,在遇不到任何錯誤和困難的時候,完全沒必要追求更新.<br />
+					<br />
+					雅虎奇摩亦是基於另一個開源項目:OpenVanilla(香草輸入法).亦可以說是其在windows上的移植.<br />
+					而現在,我做的雅虎奇摩在綫倉頡輸入法,不正是此軟體的又一個活躍分支嗎?<br />
+					由此可以看到,開源的意義,在於無數商業和個人都可以給其添磚加瓦,使其生無止境,生生不息!<br />
+					<br />
+					<span class="bold_red">&#60;section4/4 談談逐漸提示&#62;</span><br />
+					其實對於最長五碼-幾乎無重的倉頡。逐漸提示是多餘的，衹有去掉了這個功能，才能充分享受候選框的"乾淨"。無有意外重碼，惟有準確編碼。<br />
+					如[現]字，若開逐漸提示，那麼當輸入{一土月山}的時候，就會出現[珼]這種生僻卻又形似的字。<br />
+					候選框中少而準的漢字，使人快樂和滿足，輕易向"不需要候選提示框"進發。<br />
+					<span class="color_373">在此網主溫馨提示:</span>倉頡人一定不要逐漸提示。<br />
+					<br />
+				</div>
+				<div id="topical3">
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲雅虎奇摩</span><br />
+					希望雅虎奇摩的生命光輝能夠繼續閃耀，讓每一個沒用過雅虎奇摩輸入法的人都能方便試用。因爲雅虎奇摩倉頡確確實實是目前最完美的倉頡!<br />
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲在綫輸入法的創意，好玩!!!</span><br />
+					第一次見識在綫輸入法，就覺得這個東西太神奇太有趣了!所有的輸入和字符檢索處理全部在一個網頁中實現!單憑我的想象，我根本不會想到網頁瀏覽器可以變成一個輸入法。<br />
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲要查詢倉頡編碼</span><br />
+					曾經，爲了查一個字的編碼，竟然要去漢典這種網站，看到滿頁的元素緩慢地加載，這樣，漫長的等待也使得學習的難度潛在地加增了。<br />
+					現在，我做好了這個網站，任何人都可以方便進行倉頡編碼的查詢。不管你是用雅虎奇摩還是用其他輸入法，不管你是初學者還是像我這樣用了兩三年，這裡永遠是最快速方便的倉頡編碼查詢網站。<br />
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲字體</span><br />
+						HTML(高級文本標記語言)能夠設置向後字體檢索，再也不必見到亂碼，或見到不同的字體放在一起。<br />
+					<div id="for_font">
+						<div id="for_font_cell">
+							(<span class="color_373">圖解</span>:gcin和ejsoon_ime這兩個輸入法均用不同的字體顯示，並且我用過的其他輸入法亦是如此。<br /><br />衹有網頁輸入法可以設置多個向後檢索字體。)
+						</div>
+						<img src="./pictures/for_font.png" style="float:left;" />
+						<div style="width:100%;height:1px;margin-top:-1px;clear:both;"></div>
+					</div>
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲換系統</span><br />
+					一旦用別人的機器，或者新灌的系統暫時沒有雅虎奇摩輸入法，又或者，你不想裝中文輸入法(全英文)，那麼，在綫倉頡是你最好的選擇。<br />
+					因爲個人喜好原因，我堅決拒絕使用盜版的作業系統和盜版軟體。在Linux下，裝一個輸入法並不方便。<br />
+					所以有時候，我們需要一個:真正跨平臺，免安裝的在綫輸入法。<br />
+					<br />
+					<br />
+					<span class="whyOnline_title">因爲喜歡編程，喜歡做輸入法</span><br />
+					使用了這麼多輸入法軟體，無有一個合自己心意的，包括雅虎奇摩輸入法本體。比如它的{Enter}功能與{Space}一樣，候選框光標跟隨亂跳，字型顯示不全，無法禁止五碼全碼頂字上屏等。<br />
+					既然自己會一點編程，何不自己做一個?做一個比雅虎奇摩原版更好用的輸入法!<br />
+					<br />
+					<br />
+				</div>
+				<div id="topical4">
+					<br />
+					<br />
+					<span class="bold_red">ttf字型檔下載:</span>
+					<div id="ttf_whole">
+						<div class="ttf_left1">
+							TW-Sung,TW-Kai<br />
+							HanaMin
+						</div>
+						<div class="ttf_left1">
+							<a href="http://www.cns11643.gov.tw/AIDB/download.do?name=%E5%AD%97%E5%9E%8B%E4%B8%8B%E8%BC%89" target="_blank">官方下載</a><br />
+							<a href="http://fonts.jp/hanazono/" target="_blank">官方下載</a>
+						</div>
+						<div class="ttf_left2">
+							<a href="https://github.com/ejsoonyang/font_cangjie/tree/master/fonts" target="_blank">github_Raw</a>
+						</div>
+						<div class="ttf_left2">
+							<a href="https://drive.google.com/folderview?id=0B8K-YwbJ85NsM2Q4c2Z2Z1JJQjg&usp=sharing" target="_blank">drive_google</a>
+						</div>
+						<div style="width:100%;height:1px;margin-top:-1px;clear:both;"></div>
+						(TW-Sung,TW-Kai官方似乎已不再提供下載)<br />
+					</div>
+					<br />
+					<span class="bold_red">輸入法軟體下載:</span>
+					<div id="soft_whole">
+						<div id="soft_left1">
+							<div id="soft_cell">
+								<br />
+								雅虎奇摩輸入法<br />Yahoo! KeyKey<br />
+								<br />
+								<a href="https://tw.info.yahoo.com/service/keykey.html" target="_blank">官方網站</a>
+							</div>
+							<div id="soft_cell">
+								<br />
+								gcin
+								<br />
+								<br />
+								<a href="http://www.hyperrate.com/" target="_blank">官方網站</a>
+							</div>
+							<div id="soft_cell">
+								<br />
+								中州韻<br />rime
+								<br />
+								<br />
+								<a href="https://code.google.com/p/rimeime/" target="_blank">官方網站</a>
+							</div>
+							<div id="soft_cell">
+								<br />
+								Lime
+								<br />
+								<br />
+								<a href="https://play.google.com/store/apps/details?id=net.toload.main.hd" target="_blank">play_google</a>
+							</div>
+							<div id="soft_cell">
+								<br />
+								香草輸入法<br />OpenVanilla
+								<br />
+								<br />
+								<a href="https://openvanilla.org/" target="_blank">官方網站</a>
+							</div>
+							<div id="soft_cell">
+								<br />
+								雅虎奇摩<span class="bold_red">在綫</span>輸入法<br />Yahoo! KeyKey <span class="bold_red">Online</span>
+								<br />
+								<br />
+								<a href="https://github.com/ejsoonyang/yahookeykey_online" target="_blank">github</a>
+							</div>
+						</div>
+						<div id="soft_left2">
+							<div id="soft_cell">
+								<br />
+								windows32/64<br />Mac OS X
+							</div>
+							<div id="soft_cell">
+								<br />
+								Linux<br />windows32/64<br />Android
+							</div>
+							<div id="soft_cell">
+								<br />
+								Linux<br />windows32/64<br />Mac OS X
+							</div>
+							<div id="soft_cell">
+								<br />
+								Android
+							</div>
+							<div id="soft_cell">
+								<br />
+								Mac OS X
+							</div>
+							<div id="soft_cell">
+								<br />
+								Any platform that had an Internet browser
+							</div>
+						</div>
+						<div id="soft_left3">
+							<div id="soft_cell">
+								<br />
+								雅虎奇摩官方安裝程式。官網已不再提供下載。我的網盤僅提供windows32版本，更多版本在:<a href="http://briian.com/5425/yahoo-key-key.html">重灌狂人</a>。
+							</div>
+							<div id="soft_cell">
+								<br />
+								Linux的最佳選擇。<br />下載安裝可至官網。我的網盤提供把gcin配置成雅虎奇摩的設置方法與所需文檔。
+							</div>
+							<div id="soft_cell">
+								<br />
+								一種可定製性超強的輸入法算法框架。<br />我的網盤提供把Linux下的rime配置成雅虎奇摩的文檔。
+							</div>
+							<div id="soft_cell">
+								<br />
+								Android下輸入法的首選，簡直比電腦上的還好用!請在我網盤下載雅虎奇摩倉頡cin檔導入。
+							</div>
+							<div id="soft_cell">
+								<br />
+								雅虎奇摩輸入法正是基於此輸入法編寫的。由於本人資源有限，未對其做過測試，望用過的朋友分享下使用感想。
+							</div>
+							<div id="soft_cell">
+								<br />
+								本網頁輸入法作爲一個公益項目，在此提供全部離綫文檔下載。
+							</div>
+						</div>
+					</div>
+					<br />
+					<div id="mydrive_whole">
+						<div class="mydrive_right">
+							上面提到的<br />
+							&#60;我的網盤&#62;
+						</div>
+						<div class="mydrive_right">
+							<a href="https://drive.google.com/folderview?id=0B8K-YwbJ85NsYXhQVUNldDVsUTQ&usp=sharing" target="_blank">drive_google</a><br />
+							<a href="https://github.com/ejsoonyang/font_cangjie/tree/master/cangjie_software" target="_blank">github_Raw</a>
+						</div>
+						<div style="width:100%;height:1px;margin-top:-1px;clear:both;"></div>
+					</div>
+					<br />
+				</div>
+				<div id="topical5">
+					<ul>
+						<li><a href="http://cbflabs.com" target="_blank">朱邦復工作室</a></li>
+						<li><a href="http://www.hanculture.com" target="_blank">漢字樂園</a></li>
+						<li><a href="http://www.open-lit.com" target="_blank">開放文學</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://www.cjhk.org" target="_blank">倉頡之友．香港</a></li>
+						<li><a href="http://www.chinesecj.com" target="_blank">倉頡之友．馬來西亞</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://input.foruto.com/cccls/cjzd.html" target="_blank">香港華通follow me倉頡字典</a></li>
+						<li><a href="http://www.fed.cuhk.edu.hk/readwrite/typing/" target="_blank">香港中文大學．倉頡教學</a></li>
+						<li><a href="http://www.keithtsoi.com.hk/" target="_blank">KTC蔡劍南中文電腦中心</a></li>
+					</ul>
+					<ul>
+						<li><a href="http://ecj.hk/" target="_blank">易頡輸入法</a></li>
+						<li><a href="http://www.scj2000.com/" target="_blank">快倉2000中文輸入法</a></li>
+						<li><a href="http://ejsoon.ciki.me/cangjie/online.html" target="_blank">尹杉網站．雅虎奇摩倉頡在綫輸入法</a></li>
+					</ul>
+				</div>
+				<div id="bottom">
+					<div id="bottom1">
+						<span class="color_373">{〇Y!}圖及{Yahoo!奇摩}藝術字商標爲雅虎公司所有，除此之外:</span>
+					</div>
+					<div id="bottom2">
+						<img id="bottom_img1" src="./pictures/everything_diy5.png" />
+						<img id="bottom_img2" src="./pictures/HTML5_1Color_White.png" />
+						<img id="bottom_img3" src="./pictures/by-nc-nd.png" />
+					</div>
+				</div>
+			</div>
+			<div style="width:100%;height:1px;margin-top:-1px;"></div>
+		</div>
+	<footer>
+		<script src="./help.js"></script>
+	</footer>
+	</body>
+</html>
