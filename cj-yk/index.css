@@ -89,6 +89,17 @@ div {
 	width:50%;
 	vertical-align:middle;
 	display:inline-block;
+	background-image:url(../pictures/title_bg.png);
+    animation:7s title_bg_anim ease 4s infinite;
+    -webkit-animation:7s title_bg_anim ease 4s infinite;
+}
+@keyframes title_bg_anim {
+    0% {background-position:0px 0px;}
+    100% {background-position:11400px 0px;}
+}
+@-webkit-keyframes title_bg_anim {
+    0% {background-position:0px 0px;}
+    100% {background-position:11400px 0px;}
 }
 #cj_yk_hvno {
 	position:relative;

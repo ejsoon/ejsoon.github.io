@@ -7,6 +7,12 @@ var select_idiom = document.getElementById("select_idiom");
 var input_mode_button = document.getElementById("input_mode_button");
 var help = document.getElementById("help");
 
+var help_content_inner = document.getElementById("help_content_inner");
+var space_mode_false = document.getElementById("space_mode_false");
+var space_mode_true = document.getElementById("space_mode_true");
+var search_mode_false = document.getElementById("search_mode_false");
+var search_mode_true = document.getElementById("search_mode_true");
+
 //to initial the textarea's width and height
 input_area.style.width = "400px";
 input_area.style.height = "200px";
@@ -27,6 +33,7 @@ var space_mode = false; //space manner when no cc matched
 var punc_mode = false; //,.to two width
 var font_mode = false; //TW-Sung or HanaMin
 var search_mode = false; //search the e cha from cc
+var help_mode = false; //help button is clicked
 
 //search the e cha from cc
 var e_storage = []; //store the matched e-cha
@@ -340,6 +347,76 @@ function change_input_mode() {
 	return;
 }
 
+function change_help(the_botton) {
+	if (help_mode) {
+		help_mode = false;
+		help_content_inner.style.display = "none";
+		the_botton.innerHTML = "&#62;&#62;&#62;";
+	} else {
+		help_mode = true;
+		the_botton.innerHTML = "&#60;&#60;&#60;";
+		help_content_inner.style.display = "inline";
+	}
+	input_area.focus();
+}
+
+function change_search_mode(the_value) {
+	if (String(search_mode) != the_value) {
+		if (search_mode) {
+			search_mode = false;
+			e_storage = [];
+			e_point = 0;
+			vision_inform("", "", 0);
+			input_area.disabled = false;
+			input_mode_button.disabled = false;
+			cc_code.readOnly = true;
+			input_area.focus();
+		} else {
+			search_mode = true;
+			input_letter = "";
+			idiom_count = 0;
+			page_point = 0;
+
+			e_storage = [];
+			e_point = 0;
+
+			vision_inform("", "<-輸入漢字查詢", 0);
+			input_area.disabled = true;
+			input_mode_button.disabled = true;
+			cc_code.readOnly = false;
+			cc_code.focus();
+		}
+	}
+}
+
+function change_space_mode(the_value) {
+	if (String(space_mode) != the_value) {
+		if (space_mode) {
+			space_mode = false;
+			vision_inform("空格模式", "空碼無效", 1000);
+		}
+		else {
+			space_mode = true;
+			vision_inform("空格模式", "空碼清空", 1000);
+		}
+		input_area.focus();
+	}
+}
+
+function change_punc_mode(the_value) {
+	if (String(punc_mode) != the_value) {
+		if (punc_mode) {
+			punc_mode = false;
+			vision_inform("切換標點", "英文標點", 1000);
+		}
+		else {
+			punc_mode = true;
+			vision_inform("切換標點", "中文標點", 1000);
+		}
+		input_area.focus();
+	}
+}
+
 function match_e(search_cc) {
 	var search_point = 0;
 	var single_letter = "";
@@ -514,6 +591,7 @@ function read_cin() {
 					cin_n_point += 1;
 				}
 				input_mode_button.disabled = false;
+				help.disabled = false;
 				change_input_mode();
 				vision_inform("開始使用", "", 1000);
 			}

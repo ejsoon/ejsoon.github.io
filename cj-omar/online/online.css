@@ -29,6 +29,32 @@ div {
 #function_area {
 	text-align:left;
 }
+#help_div {
+	margin:0px;
+	white-space:nowrap;
+	float:right;
+}
+#help_content {
+	margin:0px;
+	float:right;
+}
+#help_content_inner {
+	position:absolute;
+	margin:0px;
+	padding:20px;
+	font-size:18px;
+	display:none;
+	background-color:#5c017a;
+}
+.search_mode_label, .space_mode_label, .punc_mode_label {
+	background-color:white;
+}
+#space_mode_fieldset, #punc_mode_fieldset {
+	margin-top:20px;
+}
+#search_mode_legend, #space_mode_legend, #punc_mode_legend {
+	color:white;
+}
 textarea {
 }
 #input_area {
