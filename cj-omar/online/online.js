@@ -12,6 +12,10 @@ var space_mode_false = document.getElementById("space_mode_false");
 var space_mode_true = document.getElementById("space_mode_true");
 var search_mode_false = document.getElementById("search_mode_false");
 var search_mode_true = document.getElementById("search_mode_true");
+var punc_mode_false = document.getElementById("punc_mode_false");
+var punc_mode_true = document.getElementById("punc_mode_true");
+var span_pgup = document.getElementById("span_pgup");
+var span_pgdn = document.getElementById("span_pgdn");
 
 //to initial the textarea's width and height
 input_area.style.width = "400px";
@@ -66,10 +70,12 @@ function key_down(evn) {
 			if (space_mode) {
 				space_mode = false;
 				vision_inform("空格模式", "空碼無效", 1000);
+				space_mode_false.checked = true;
 			}
 			else {
 				space_mode = true;
 				vision_inform("空格模式", "空碼清空", 1000);
+				space_mode_true.checked = true;
 			}
 		}
 		//{,}switch punctuation mode
@@ -77,10 +83,12 @@ function key_down(evn) {
 			if (punc_mode) {
 				punc_mode = false;
 				vision_inform("切換標點", "英文標點", 1000);
+				punc_mode_false.checked = true;
 			}
 			else {
 				punc_mode = true;
 				vision_inform("切換標點", "中文標點", 1000);
+				punc_mode_true.checked = true;
 			}
 		}
 		//{.}switch font
@@ -154,6 +162,7 @@ function key_down(evn) {
 			input_mode_button.disabled = true;
 			cc_code.readOnly = false;
 			cc_code.focus();
+			search_mode_true.checked = true;
 		}
 		else {
 			return true;
@@ -269,6 +278,9 @@ function search_input(evn) {
 			input_mode_button.disabled = false;
 			cc_code.readOnly = true;
 			input_area.focus();
+			search_mode_false.checked = true;
+			span_pgup.style.display = "none";
+			span_pgdn.style.display = "none";
 			return false;
 		}
 		//switch font
@@ -288,11 +300,15 @@ function search_input(evn) {
 	if ((evn.keyCode == 34 || evn.keyCode == 53) && e_storage.length > 0) {
 		if (e_storage.length > e_point + 1) {
 			e_point += 1;
-			if (e_storage.length > e_point + 2) {
+			if (e_storage.length > e_point + 1) {
 				vision_inform(cc_code.value, e_storage[e_point] + "    < >", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "inline";
 			}
 			else {
 				vision_inform(cc_code.value, e_storage[e_point] + "    <  ", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "none";
 			}
 		}
 		return false;
@@ -303,9 +319,13 @@ function search_input(evn) {
 			e_point -= 1;
 			if (e_point > 0) {
 				vision_inform(cc_code.value, e_storage[e_point] + "    < >", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "inline";
 			}
 			else {
 				vision_inform(cc_code.value, e_storage[e_point] + "      >", 0);
+				span_pgup.style.display = "none";
+				span_pgdn.style.display = "inline";
 			}
 		}
 		return false;
@@ -324,6 +344,7 @@ function change_font(the_font) {
 	select_idiom.className = the_font;
 	input_mode_button.className = the_font;
 	help.className = the_font;
+	help_content_inner.className = the_font;
 	return;
 }
 
@@ -371,6 +392,8 @@ function change_search_mode(the_value) {
 			input_mode_button.disabled = false;
 			cc_code.readOnly = true;
 			input_area.focus();
+			span_pgup.style.display = "none";
+			span_pgdn.style.display = "none";
 		} else {
 			search_mode = true;
 			input_letter = "";
@@ -415,6 +438,43 @@ function change_punc_mode(the_value) {
 		}
 		input_area.focus();
 	}
+}
+
+function change_page(the_value) {
+	//e_point plus
+	if (the_value == "span_pgdn") {
+		if (e_storage.length > e_point + 1) {
+			e_point += 1;
+			if (e_storage.length > e_point + 1) {
+				vision_inform(cc_code.value, e_storage[e_point] + "    < >", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "inline";
+			}
+			else {
+				vision_inform(cc_code.value, e_storage[e_point] + "    <  ", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "none";
+			}
+		}
+	}
+	//e_point reduce
+	else if (the_value == "span_pgup") {
+		if (e_point > 0) {
+			e_point -= 1;
+			if (e_point > 0) {
+				vision_inform(cc_code.value, e_storage[e_point] + "    < >", 0);
+				span_pgup.style.display = "inline";
+				span_pgdn.style.display = "inline";
+			}
+			else {
+				vision_inform(cc_code.value, e_storage[e_point] + "      >", 0);
+				span_pgup.style.display = "none";
+				span_pgdn.style.display = "inline";
+			}
+		}
+	}
+	cc_code.focus();
+	return;
 }
 
 function match_e(search_cc) {
@@ -485,19 +545,26 @@ function cc_e() {
 	e_point = 0;
 	if (cc_code.value == "") {
 		vision_inform("", "<-請輸入漢字查詢", 0);
+		span_pgup.style.display = "none";
+		span_pgdn.style.display = "none";
 	}
 	else {
 		match_e(cc_code.value);
  		if (e_storage.length > 0) {
  			if (e_storage.length > 1) {
 				vision_inform(cc_code.value, e_storage[e_point] + "      >", 0);
+				span_pgup.style.display = "none";
+				span_pgdn.style.display = "inline";
  			}
  			else {
 				vision_inform(cc_code.value, e_storage[e_point] + "       ", 0);
+				span_pgup.style.display = "none";
+				span_pgdn.style.display = "none";
  			}
-		}
-		else {
+		} else {
 			vision_inform(cc_code.value, "？查無此字", 0);
+			span_pgup.style.display = "none";
+			span_pgdn.style.display = "none";
 		}
 	}
 	return;

@@ -67,6 +67,10 @@ span {
 #welcome {
 	color:white;
 }
+#span_pgup, #span_pgdn {
+	display:none;
+	cursor:pointer;
+}
 input {
 	position:relative;
 	margin:0px;

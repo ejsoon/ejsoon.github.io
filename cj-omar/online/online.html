@@ -21,24 +21,27 @@
 					<div id="help_content">
 						<div id="help_content_inner" class="font_TWSung">
 							<fieldset id="search_mode_fieldset">
-								<legend id="search_mode_legend">查詢倉頡編碼</legend>
+								<legend id="search_mode_legend">查詢倉頡編碼
+									<span id="span_pgup" onclick="change_page(this.id)">&#60;</span>
+									<span id="span_pgdn" onclick="change_page(this.id)">&#62;</span>
+								</legend>
 								<input type="radio" name="search_mode" id="search_mode_false" value=false checked=true onclick="change_search_mode(this.value)" />
 								<label for="search_mode_false" class="search_mode_label">正常輸入</label>
-								<input type="radio" name="search_mode" id="search_mode_true" class="font_TWSung" value=true onclick="change_search_mode(this.value)" />
+								<input type="radio" name="search_mode" id="search_mode_true" value=true onclick="change_search_mode(this.value)" />
 								<label for="search_mode_true" class="search_mode_label">查詢編碼</label>
 							</fieldset>
 							<fieldset id="space_mode_fieldset">
 								<legend id="space_mode_legend">空碼空格模式</legend>
 								<input type="radio" name="space_mode" id="space_mode_false" value=false checked=true onclick="change_space_mode(this.value)" />
 								<label for="space_mode_false" class="space_mode_label">空碼無效</label>
-								<input type="radio" name="space_mode" id="space_mode_true" class="font_TWSung" value=true onclick="change_space_mode(this.value)" />
+								<input type="radio" name="space_mode" id="space_mode_true" value=true onclick="change_space_mode(this.value)" />
 								<label for="space_mode_true" class="space_mode_label">空碼清空</label>
 							</fieldset>
 							<fieldset id="punc_mode_fieldset">
 								<legend id="punc_mode_legend">切換全半句讀</legend>
 								<input type="radio" name="punc_mode" id="punc_mode_false" value=false checked=true onclick="change_punc_mode(this.value)" />
 								<label for="punc_mode_false" class="punc_mode_label">英文標點</label>
-								<input type="radio" name="punc_mode" id="punc_mode_true" class="font_TWSung" value=true onclick="change_punc_mode(this.value)" />
+								<input type="radio" name="punc_mode" id="punc_mode_true" value=true onclick="change_punc_mode(this.value)" />
 								<label for="punc_mode_true" class="punc_mode_label">中文標點</label>
 							</fieldset>
 						</div>
