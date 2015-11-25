@@ -90,12 +90,14 @@ div {
 	vertical-align:middle;
 	display:inline-block;
 	background-image:url(../pictures/title_bg.png);
-    animation:7s title_bg_anim ease 4s infinite;
-    -webkit-animation:7s title_bg_anim ease 4s infinite;
+    animation:7s title_bg_anim ease 0s infinite;
+    -webkit-animation:7s title_bg_anim ease 0s infinite;
 }
 @keyframes title_bg_anim {
-    0% {background-position:0px 0px;}
-    100% {background-position:11400px 0px;}
+    0% {background-position:0px 0px;opacity:0.1;}
+    40% {opacity:1;}
+    60% {opacity:1;}
+    100% {background-position:11400px 0px;opacity:0.1;}
 }
 @-webkit-keyframes title_bg_anim {
     0% {background-position:0px 0px;}

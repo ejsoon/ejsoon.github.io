@@ -351,7 +351,7 @@ function change_font(the_font) {
 function change_input_mode() {
 	if (input_mode) {
 		input_mode = false;
-		input_mode_button.innerHTML = "倉頡";
+		input_mode_button.innerHTML = "中";
 	}
 	else {
 		input_mode = true;
