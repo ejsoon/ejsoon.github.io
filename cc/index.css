@@ -74,9 +74,7 @@ div {
 #title_img6 {
 	position:relative;
 	float:right;
-	width:80px;
-	animation:runright 25s ease-out 0s infinite;
-	-webkit-animation:runright 25s ease-out 0s infinite;
+	height:250px;
 }
 #head_main_out {
 	position:absolute;
@@ -89,19 +87,7 @@ div {
 	width:50%;
 	vertical-align:middle;
 	display:inline-block;
-	background-image:url(../pictures/title_bg.png);
-    animation:7s title_bg_anim ease 0s infinite;
-    -webkit-animation:7s title_bg_anim ease 0s infinite;
-}
-@keyframes title_bg_anim {
-    0% {background-position:0px 0px;opacity:0.1;}
-    40% {opacity:1;}
-    60% {opacity:1;}
-    100% {background-position:11400px 0px;opacity:0.1;}
-}
-@-webkit-keyframes title_bg_anim {
-    0% {background-position:0px 0px;}
-    100% {background-position:11400px 0px;}
+	border-right:2px solid #6279db;
 }
 #cj_yk_hvno {
 	position:relative;
@@ -132,18 +118,6 @@ div {
 #by-nc-nd {
 	margin:20px;
 	float:left;
-}
-@keyframes runright {
-	0% {right:30px;opacity:0.3;}
-	20% {right:0px;opacity:1;}
-	90% {right:0px;opacity:1;}
-	100% {right:0px;opacity:0;}
-}
-@-webkit-keyframes runright {
-	0% {right:30px;opacity:0.3;}
-	20% {right:0px;opacity:1;}
-	90% {right:0px;opacity:1;}
-	100% {right:0px;opacity:0;}
 }
 
 /*頭尾
