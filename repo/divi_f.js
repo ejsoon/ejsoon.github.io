@@ -19,6 +19,20 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 	var divi_f_min = [];//divi_f_min is the float text
 	var divi_f_min_n = 0;
 	var br_n = 0; //use many times 
+
+	var insert_str_arr = [];//below is operating the <span> insert innerHTML
+	var insert_index_arr = [];
+
+	var insert_index = [];
+	var insert_name = [];
+	var insert_length = [];
+	var insert_lasting = [];
+
+	var insert_li = 0;
+	var insert_p = 0;
+	var insert_x = 0;
+	var insert_y = 0;
+
 	if (margin == undefined) {
 		margin = "20px 10px";
 	}
@@ -44,6 +58,41 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			the_content.innerHTML += in_str;
 			continue;
 		}
+
+		insert_str_arr = in_str.match(/<.*?>{1}/g);
+		if (insert_str_arr.length) {
+			insert_index_arr = [];
+			insert_li = 0;
+			for (insert_p = 0; insert_p < insert_str_arr.length; insert_p++) {
+				insert_index_arr.push(in_str.indexOf("<", insert_li));
+				insert_li = insert_index_arr[insert_p] + 1;
+			}
+			alert(insert_str_arr);
+			alert(insert_index_arr);
+			for (insert_p = 0; insert_p < insert_str_arr.length; insert_p++) {
+				if (insert_str_arr[insert_p].substr(1, 1) != "/") {
+					insert_index.push(insert_index_arr[insert_p]);
+					insert_name.push(insert_str_arr[insert_p].match(/[^< >]+/)[0]);
+					insert_length.push(insert_str_arr[insert_p].length);
+
+					insert_x = insert_y = insert_p + 1;
+					while (insert_x < insert_str_arr.length) {
+						if (insert_str_arr[insert_x].substr(1, 1) != "/") {
+							insert_x += 1;
+							insert_y += 2;
+						} else {
+							break;
+						}
+					}
+					insert_lasting.push(insert_index_arr[insert_y]);
+				}
+			}
+			alert(insert_index);
+			alert(insert_name);
+			alert(insert_length);
+			alert(insert_lasting);
+		}
+
 		var n = 0;
 		while (n * cha_length < in_str.length) {
 			sub_str = in_str.substr(n * cha_length, cha_length);
@@ -61,7 +110,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 
 			divi_f_min.push(document.createElement("div"));
 			divi_f_min[divi_f_min_n].innerHTML = app_str;
-			//divi_f_min[divi_f_min_n].className = "divi_f_min";
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
@@ -73,7 +121,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].innerHTML += "<br>";
 		}
 		divi_f_min[divi_f_min_n].innerHTML += "<span style='color:" + color_bg + "'>_</span>";
-		//divi_f_min[divi_f_min_n].className = "divi_f_min";
 		divi_f_min[divi_f_min_n].style.margin = margin;
 		divi_f_min[divi_f_min_n].style.cssFloat = "right";
 		the_content.appendChild(divi_f_min[divi_f_min_n]);
