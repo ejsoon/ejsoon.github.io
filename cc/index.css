@@ -120,9 +120,14 @@ div {
 	float:left;
 }
 
-/*頭尾
+/*頭的尾
 */
 
+a {
+	background-color:#071224;
+	color:white;
+	text-decoration:none;
+}
 
 #cj_odye {
 	
