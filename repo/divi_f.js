@@ -44,7 +44,7 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 		margin = "20px 10px";
 	}
 	if (color_bg == undefined) {
-		color_bg = "purple";
+		color_bg = "white";
 	}
 	
 	in_str_replace = the_content.innerHTML;
@@ -174,6 +174,8 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].innerHTML = app_str;
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
+			divi_f_min[divi_f_min_n].style.fontSize = font_size;
+			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			cha_n++;
 			divi_f_min_n++;
@@ -185,6 +187,8 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 		divi_f_min[divi_f_min_n].innerHTML += "<span style='color:" + color_bg + "'>_</span>";
 		divi_f_min[divi_f_min_n].style.margin = margin;
 		divi_f_min[divi_f_min_n].style.cssFloat = "right";
+		divi_f_min[divi_f_min_n].style.fontSize = font_size;
+		divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 		the_content.appendChild(divi_f_min[divi_f_min_n]);
 		divi_f_min_n++;
 	}
