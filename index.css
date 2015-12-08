@@ -44,13 +44,11 @@ a img {
 	margin-right:80px;
 	width:auto;
 	height:100%;
+    text-align:center;
 	background-image:url(pictures/title_bg4.png);
 }
-#head_mid {
+#head_in_img {
 	position:relative;
-    width:100%;
-    text-align:center;
-    vertical-align:middle;
     display:inline-block;
 }
 #title_img {
@@ -64,6 +62,27 @@ a img {
 }
 .head_in_title {
 	float:right;
+}
+.navi_div_min:hover,.navi_div_child:hover {
+	color:#302;
+	background-color:#baa;
+	cursor:pointer;
+}
+.navi_div_child, .navi_div_min {
+	float:right;
+    text-align:center;
+    font-size:22px;
+}
+.navi_div_child {
+	width:12.5%;
+	display:none;
+	color:yellow;
+	background-color:#524;
+}
+.navi_div_min {
+	width:25%;
+	color:white;
+	background-color:#302;
 }
 #aside_div {
 	position:relative;
