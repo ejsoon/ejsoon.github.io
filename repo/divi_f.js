@@ -170,6 +170,7 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			divi_f_min[divi_f_min_n].style.fontSize = font_size;
+			divi_f_min[divi_f_min_n].style.width = font_size;
 			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			cha_n++;
@@ -181,6 +182,7 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			divi_f_min[divi_f_min_n].style.fontSize = font_size;
+			divi_f_min[divi_f_min_n].style.width = font_size;
 			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			divi_f_min_n++;
