@@ -13,10 +13,8 @@ function navi_onclick(that) {
 		alert("friends");
 	} else if (navi_num == 0) {
 		while (add_x <= 4) {
-			if (add_x < the_num) {
+			if (add_x != the_num) {
 				the_navi[add_x - 1].style.visibility = "hidden";
-			} else if (add_x > the_num) {
-				the_navi[add_x - 1].style.display = "none";
 			} else {
 				navi_num = the_num;
 				the_child[navi_num * 2 - 2].style.display = "block";
@@ -28,9 +26,7 @@ function navi_onclick(that) {
 		the_child[navi_num * 2 - 2].style.display = "none";
 		the_child[navi_num * 2 - 1].style.display = "none";
 		while (add_x <= 4) {
-			if (add_x > navi_num) {
-				the_navi[add_x - 1].style.display = "block";
-			} else if (add_x < navi_num) {
+			if (add_x != navi_num) {
 				the_navi[add_x - 1].style.visibility = "visible";
 			}
 			add_x++;

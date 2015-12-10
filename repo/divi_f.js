@@ -61,13 +61,9 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 	the_content.innerHTML = "";
 	for (var arr_n = 0; arr_n < in_str_arr.length; arr_n++) {
 		in_str = in_str_arr[arr_n];
-		if ("<" == in_str.substr(0, 1)) { //a whole paragragh corld with <>
-			the_content.innerHTML += in_str;
-			continue;
-		}
 
 		insert_str_arr = in_str.match(/<.*?>/g);
-		if (insert_str_arr != null) {
+		if (insert_str_arr != null) {// insert_index_arr is the <> sumerise
 			insert_index_arr = [];
 			insert_li = 0;
 			for (insert_p = 0; insert_p < insert_str_arr.length; insert_p++) {
@@ -106,7 +102,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 		while (cha_n * cha_length + pre_add < in_str.length) {
 			if (insert_str_arr != null) {
 				//here count <>
-				pre_add = this_add;
 				while (insert_x < insert_index_arr.length &&
 					insert_index_arr[insert_x] >= cha_n * cha_length + pre_add &&
 					insert_index_arr[insert_x] < cha_n * cha_length + this_add + cha_length) {
@@ -155,8 +150,8 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 				}
 				if (br_n < cha_length - 1) {
 					app_str += "<br>";
-				} else if (sub_str.length < cha_length) {
-						app_str += "<span style='color:" + color_bg + "'>_</span>";
+				//} else if (sub_str.length < cha_length) {
+					//app_str += "<span style='color:" + color_bg + "'>_</span>";
 				}
 				if (count_add.length && br_n == cha_length - 1) {
 					insert_p = 0;
@@ -179,17 +174,16 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			cha_n++;
 			divi_f_min_n++;
+			pre_add = this_add;
 		}
-		divi_f_min.push(document.createElement("div"));
-		for (br_n = 1; br_n < cha_length; br_n++) {
-			divi_f_min[divi_f_min_n].innerHTML += "<br>";
+		if (0 == in_str.length) {
+			divi_f_min.push(document.createElement("div"));
+			divi_f_min[divi_f_min_n].style.margin = margin;
+			divi_f_min[divi_f_min_n].style.cssFloat = "right";
+			divi_f_min[divi_f_min_n].style.fontSize = font_size;
+			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
+			the_content.appendChild(divi_f_min[divi_f_min_n]);
+			divi_f_min_n++;
 		}
-		divi_f_min[divi_f_min_n].innerHTML += "<span style='color:" + color_bg + "'>_</span>";
-		divi_f_min[divi_f_min_n].style.margin = margin;
-		divi_f_min[divi_f_min_n].style.cssFloat = "right";
-		divi_f_min[divi_f_min_n].style.fontSize = font_size;
-		divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
-		the_content.appendChild(divi_f_min[divi_f_min_n]);
-		divi_f_min_n++;
 	}
 }

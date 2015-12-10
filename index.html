@@ -8,43 +8,65 @@
 	</head>
 	<body id="body01">
 		<div id="light_effection"></div>
-		<div id="head_div">
-			<div id="head_out"><!--absolute--!>
-				<div id="head_in">
-					<img id="head_in_img" src="./pictures/title_bg5.png">
+		<div id="whole_div">
+			<div id="head_div">
+				<div id="head_out"><!--absolute--!>
+					<div id="head_in">
+						<img id="head_in_img" src="./pictures/title_bg5.png">
+					</div>
 				</div>
-			</div>
-			<img id="title_img" src="./pictures/title6.png"></img>
-			<div class="clear_float"></div>
-		</div><!--end head_div--!>
-		<div id="navi_div">
-			<div id="navi_div_min1" class="navi_div_min" onclick="navi_onclick(this)">文</div>
-			<div id="navi_div_child1" class="navi_div_child">字</div>
-			<div id="navi_div_child2" class="navi_div_child">言</div>
-			<div id="navi_div_min2" class="navi_div_min" onclick="navi_onclick(this)">行</div>
-			<div id="navi_div_child3" class="navi_div_child">脩</div>
-			<div id="navi_div_child4" class="navi_div_child">棋</div>
-			<div id="navi_div_min3" class="navi_div_min" onclick="navi_onclick(this)">忠</div>
-			<div id="navi_div_child5" class="navi_div_child">學</div>
-			<div id="navi_div_child6" class="navi_div_child">用</div>
-			<div id="navi_div_min4" class="navi_div_min" onclick="navi_onclick(this)">信</div>
-			<div class="clear_float"></div>
-		</div>
-		<div id="aside_div">
-			<div id="aside_div_funny">
-				<div id="aside_div_funny_title">頡網趣圖</div>
-				<div id="aside_div_funny_content">
-				</div>
-			</div>
-			<div id="aside_div_myreading">讀書旅程
-			</div>
-		</div>
-		<div id="intro">
-			<div id="intro_when" class="intro_child">本網始建於已未年九月廿一，至今已有日<span id="count_down"></span>。</div>
-		</div>
+				<img id="title_img" src="./pictures/title6.png"></img>
+				<div class="clear_float"></div>
+			</div><!--end head_div--!>
+			<div id="navi_div">
+				<div id="navi_div_min1" class="navi_div_min" onclick="navi_onclick(this)">文</div>
+				<div id="navi_div_min2" class="navi_div_min" onclick="navi_onclick(this)">行</div>
+				<div id="navi_div_min3" class="navi_div_min" onclick="navi_onclick(this)">忠</div>
+				<div id="navi_div_min4" class="navi_div_min" onclick="navi_onclick(this)">信</div>
+				<div id="navi_div_child1" class="navi_div_child">字</div>
+				<div id="navi_div_child2" class="navi_div_child">言</div>
+				<div id="navi_div_child3" class="navi_div_child">脩</div>
+				<div id="navi_div_child4" class="navi_div_child">棋</div>
+				<div id="navi_div_child5" class="navi_div_child">學</div>
+				<div id="navi_div_child6" class="navi_div_child">用</div>
+				<div class="clear_float"></div>
+			</div><!--end navi_div--!>
+			<div id="content_div">
+				<div id="aside_div">
+					<div id="aside_div_funny">
+						<div class="aside_div_title">頡網留影</div>
+						<div id="aside_div_funny_content">
+							<img id="aside_img1" src="../../../Downloads/jpg/1.jpg">
+						</div>
+						<div class="clear_float"></div>
+					</div>
+					<div id="aside_div_update">
+						<div class="aside_div_title">最近更新</div>
+						<div id="aside_div_update_content">乙未年十月廿八，製作網頁中…
+
+加油加油，網已經建好了！</div>
+						<div class="clear_float"></div>
+					</div>
+				</div><!--end aside_div--!>
+				<div id="intro_div">
+					<div class="intro_child">本網始建於：
+　已未年九月廿一，
+至今已有
+　<span id="count_down" style="color:red;">三十六</span>日。</div>
+					<div class="intro_child">本網實現<span style='color:red'>網頁文字豎排</span>。</div>
+					<div class="intro_child">網主名叫<span style="color:#204">尹卂。</div>
+					<div class="intro_child">網主希望在此分享有趣的事物，比如說儒釋道文化，以及各種原創遊戲。</div>
+				</div><!--end intro_div--!>
+				<div id="map_div">
+				</div><!--end map_div--!>
+			</div><!--end content_div--!>
+		</div><!--end whole_div--!>
 		<footer>
 			<script src="./index.js"></script>
 			<script src="repo/divi_f.js"></script>
+			<script>divi_f_c("intro_child", "22px", 9);</script>
+			<script>divi_f_i("aside_div_update_content", "22px", 9);</script>
+
 		</footer>
 	</body>
 </html>

@@ -14,6 +14,12 @@
 }
 body {
 	margin:0px;
+	text-align:center;
+}
+#whole_div {
+	width:900px;
+	text-align:left;
+	display:inline-block;
 }
 a img {
 	border:none;
@@ -63,9 +69,11 @@ a img {
 .head_in_title {
 	float:right;
 }
+#navi_div {
+	background-color:#afc;
+}
 .navi_div_min:hover,.navi_div_child:hover {
-	color:#302;
-	background-color:#baa;
+	background-color:#302;
 	cursor:pointer;
 }
 .navi_div_child, .navi_div_min {
@@ -74,32 +82,62 @@ a img {
     font-size:22px;
 }
 .navi_div_child {
-	width:12.5%;
+	width:10%;
 	display:none;
 	color:yellow;
-	background-color:#524;
+	background-color:#254;
 }
 .navi_div_min {
-	width:25%;
+	width:20%;
 	color:white;
-	background-color:#302;
+	background-color:#254;
 }
 #aside_div {
 	position:relative;
+	float:left;
 	margin-top:20px;
 }
-#aside_div_funny {
-	position:relative;
-	border-top:2px solid #204;
-	width:350px;
-	height:400px;
-	background-color:#edf;
+#aside_div_update {
+	margin-top:20px;
 }
-#aside_div_funny_title {
+#aside_div_update, #aside_div_funny {
+	position:relative;
+	width:100%;
+	max-width:350px;
+	border-top:3px solid #204;
+	background-color:#bcd;
+}
+.aside_div_title {
     position:absolute;
     right:0px;
-    width:28px;
+    width:24px;
 	background-color:#302;
 	color:#fff;
-	font-size:28px;
+	font-size:24px;
+	z-index:28;
+}
+#aside_div_funny_content {
+    position:relative;
+    margin:10px;
+    height:300px;
+    overflow:auto;
+}
+#aside_div_update_content {
+    position:relative;
+    margin:10px 30px 10px 10px;
+    height:300px;
+    overflow:auto;
+}
+#aside_img1 {
+	width:100%;
+}
+#intro_div {
+	float:right;
+	margin-top:20px;
+}
+.intro_child {
+	float:right;
+	margin-left:20px;
+	border-top:3px solid green;
+	background-color:#afc;
 }
