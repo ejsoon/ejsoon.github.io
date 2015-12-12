@@ -5,14 +5,6 @@ var head_main_in = document.getElementById("head_main_in");
 
 var sixTimerOut;
 
-try_date();
-
-function try_date() {
-	var msec = Date.parse("2015-09-21")
-	var today = new Date().getTime();
-	//alert(Math.floor((today - msec) / 1000 / 60 / 60 / 24));
-}
-
 function flash_six(count_down) {
 	var the_time = 0;
 	if (count_down % 2 == 0) {
