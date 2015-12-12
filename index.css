@@ -54,6 +54,7 @@ a {
 	margin-right:80px;
 	width:auto;
 	height:100%;
+	overflow:hidden;
     text-align:center;
 	background-image:url(pictures/title_bg4.png);
 }
@@ -135,12 +136,8 @@ a {
 	border-top:3px solid green;
 	background-color:#afc;
 }
-#intro_when {
-}
 #intro_vertical {
 	background-color:#fac;
-}
-#intro_myname {
 }
 .map {
 	float:right;

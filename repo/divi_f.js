@@ -1,16 +1,16 @@
-function divi_f_i(the_id, font_size, cha_length, margin, color_bg) {
+function divi_f_i(the_id, font_size, cha_length, margin) {
 	var divi_f_content = document.getElementById(the_id);
-	divi_f_go(divi_f_content, font_size, cha_length, margin, color_bg);
+	divi_f_go(divi_f_content, font_size, cha_length, margin);
 }
-function divi_f_c(the_class, font_size, cha_length, margin, color_bg) {
+function divi_f_c(the_class, font_size, cha_length, margin) {
 	var divi_f_content = document.getElementsByClassName(the_class);
 	var content_num = divi_f_content.length;
 	for (var num = 0; num < content_num; num++) {
-		divi_f_go(divi_f_content[num], font_size, cha_length, margin, color_bg);
+		divi_f_go(divi_f_content[num], font_size, cha_length, margin);
 	}
 }
 
-function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
+function divi_f_go(the_content, font_size, cha_length, margin) {
 	var in_str_replace = "";
 	var in_str_arr = [];
 	var in_str = "";
@@ -42,9 +42,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 
 	if (margin == undefined) {
 		margin = "20px 10px";
-	}
-	if (color_bg == undefined) {
-		color_bg = "white";
 	}
 	
 	in_str_replace = the_content.innerHTML;
