@@ -17,12 +17,16 @@ body {
 	text-align:center;
 }
 #whole_div {
-	width:900px;
+	width:100%;
+	max-width:900px;
 	text-align:left;
 	display:inline-block;
 }
 a img {
 	border:none;
+}
+a {
+	text-decoration:none;
 }
 #light_effection {
 	position:fixed;
@@ -131,13 +135,40 @@ a img {
 #aside_img1 {
 	width:100%;
 }
-#intro_div {
-	float:right;
-	margin-top:20px;
-}
 .intro_child {
 	float:right;
+	margin-top:20px;
 	margin-left:20px;
 	border-top:3px solid green;
 	background-color:#afc;
+}
+#intro_when {
+}
+#intro_vertical {
+	background-color:#fac;
+}
+#intro_myname {
+}
+.map {
+	float:right;
+	margin-top:20px;
+	margin-left:20px;
+	text-align:center;
+	border-top:3px solid blue;
+	background-color:#071224;
+}
+.map_child {
+	float:right;
+	color:#fe4;
+}
+.map_img {
+	width:60px;
+}
+.map_link {
+	color:#007;
+	background-color:#3a8;
+}
+.map_link:hover {
+	color:#3e8;
+	background-color:#740;
 }

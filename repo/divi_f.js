@@ -65,6 +65,11 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 		insert_str_arr = in_str.match(/<.*?>/g);
 		if (insert_str_arr != null) {// insert_index_arr is the <> sumerise
 			insert_index_arr = [];
+			insert_index = [];
+			insert_str = [];
+			insert_name = [];
+			insert_length = [];
+			insert_lasting = [];
 			insert_li = 0;
 			for (insert_p = 0; insert_p < insert_str_arr.length; insert_p++) {
 				insert_index_arr.push(in_str.indexOf("<", insert_li));
@@ -170,7 +175,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			divi_f_min[divi_f_min_n].style.fontSize = font_size;
-			divi_f_min[divi_f_min_n].style.width = font_size;
 			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			cha_n++;
@@ -182,7 +186,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			divi_f_min[divi_f_min_n].style.fontSize = font_size;
-			divi_f_min[divi_f_min_n].style.width = font_size;
 			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 			divi_f_min_n++;
