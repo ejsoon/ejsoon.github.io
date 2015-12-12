@@ -66,13 +66,6 @@ a {
 	margin:0px 10px;
 	float:right;
 }
-#head_mid_center {
-	position:relative;
-	display:inline-block;
-}
-.head_in_title {
-	float:right;
-}
 #navi_div {
 	background-color:#afc;
 }
@@ -154,7 +147,6 @@ a {
 	margin-top:20px;
 	margin-left:20px;
 	text-align:center;
-	border-top:3px solid blue;
 	background-color:#071224;
 }
 .map_child {
@@ -162,6 +154,7 @@ a {
 	color:#fe4;
 }
 .map_img {
+	margin-top:10px;
 	width:60px;
 }
 .map_link {
@@ -171,4 +164,8 @@ a {
 .map_link:hover {
 	color:#3e8;
 	background-color:#740;
+}
+.map_invert {
+	color:#fce;
+	background-color:#817;
 }

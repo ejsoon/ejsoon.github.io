@@ -109,7 +109,7 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 				//here count <>
 				while (insert_x < insert_index_arr.length &&
 					insert_index_arr[insert_x] >= cha_n * cha_length + pre_add &&
-					insert_index_arr[insert_x] < cha_n * cha_length + this_add + cha_length) {
+					insert_index_arr[insert_x] <= cha_n * cha_length + this_add + cha_length) {
 					this_add += insert_str_arr[insert_x].length;
 					insert_x++;
 				}
@@ -133,13 +133,6 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 							(cha_n * cha_length + pre_add) - sum_add) {
 							sum_add += insert_length[count_add[insert_p]];
 							app_str += insert_str[count_add[insert_p]];
-						} else if (br_n == insert_lasting[count_add[count_add.length - insert_p - 1]] - 
-							(cha_n * cha_length + pre_add) - sum_add) {
-							if (br_n > 0) {
-								app_str += "</" + insert_name[count_add[count_add.length - insert_p - 1]] + ">";
-							}
-							sum_add += insert_name[count_add[count_add.length - insert_p - 1]].length + 3;
-							count_add.splice(count_add.length - insert_p - 1, 1);
 						} else if (br_n == 0 &&
 							cha_n * cha_length + pre_add >
 							insert_index[count_add[insert_p]] &&
@@ -155,15 +148,15 @@ function divi_f_go(the_content, font_size, cha_length, margin, color_bg) {
 				}
 				if (br_n < cha_length - 1) {
 					app_str += "<br>";
-				//} else if (sub_str.length < cha_length) {
-					//app_str += "<span style='color:" + color_bg + "'>_</span>";
 				}
-				if (count_add.length && br_n == cha_length - 1) {
+				if (count_add.length) {
 					insert_p = 0;
 					while (insert_p < count_add.length) {
-						if (br_n < insert_lasting[count_add[insert_p]] - 
+						if (br_n + 1 == insert_lasting[count_add[count_add.length - insert_p - 1]] - 
 							(cha_n * cha_length + pre_add) - sum_add) {
-							app_str += "</" + insert_name[count_add[insert_p]] + ">";
+							app_str += "</" + insert_name[count_add[count_add.length - insert_p - 1]] + ">";
+							sum_add += insert_name[count_add[count_add.length - insert_p - 1]].length + 3;
+							count_add.splice(count_add.length - insert_p - 1, 1);
 						}
 						insert_p++;
 					}

@@ -64,29 +64,31 @@ div {
 }
 #head_div {
 	position:relative;
-	margin:0px;
-	width:auto;
-	height:auto;
+	margin:0 auto;
+	width:100%;
 	background-color:#071224;
-	background-position:0px -500px;
 }
-#title_img6 {
-	position:relative;
-	float:right;
-	height:250px;
-}
-#head_main_out {
+#head_out {
 	position:absolute;
 	width:100%;
 	height:100%;
-	text-align:left;
 }
-#head_main {
+#head_in {
 	position:relative;
-	width:50%;
-	vertical-align:middle;
-	display:inline-block;
-	border-right:2px solid #6279db;
+	margin-right:80px;
+	width:auto;
+	height:100%;
+    text-align:center;
+	background-image:url(../pictures/title_bg4.png);
+}
+#head_in_img {
+	position:relative;
+    display:inline-block;
+}
+#title_img {
+	height:240px;
+	margin:0px 10px;
+	float:right;
 }
 #cj_yk_hvno {
 	position:relative;
@@ -183,7 +185,7 @@ img {
 	max-width:400px;
 	max-height:400px;
 }
-.divi_f_topical {
+#cc_intro {
 	position:relative;
 	float:right;
 	width:70%;
