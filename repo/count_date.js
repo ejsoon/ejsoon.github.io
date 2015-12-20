@@ -1,13 +1,16 @@
-function count_date_span_function(count_date_span_id) {
+function count_date_span_function(count_date_span_id, the_date) {
 	var count_date_span = document.getElementById(count_date_span_id);
-	count_date_span.innerHTML = count_date();
+	count_date_span.innerHTML = count_date(the_date);
 }
 
-function count_date() {
+function count_date(the_date) {
 	var num = "〇一二三四五六七八九";
 	var unit = "十百千萬";
 
-	var msec = Date.parse("2015-11-02")
+	if (the_date == null) {
+		the_date = "2015-11-02";
+	}
+	var msec = Date.parse(the_date);
 	var today = new Date().getTime();
 	var sum = Math.floor((today - msec) / 1000 / 60 / 60 / 24);
 

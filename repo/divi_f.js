@@ -169,25 +169,26 @@ function divi_f_go(the_content, font_size, cha_length, margin) {
 				}
 			}
 
-			divi_f_min.push(document.createElement("div"));
-			divi_f_min[divi_f_min_n].innerHTML = app_str;
-			divi_f_min[divi_f_min_n].style.margin = margin;
-			divi_f_min[divi_f_min_n].style.cssFloat = "right";
-			divi_f_min[divi_f_min_n].style.fontSize = font_size;
-			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
-			the_content.appendChild(divi_f_min[divi_f_min_n]);
+			divi_push(divi_f_min, divi_f_min_n, app_str, margin, font_size, the_content, cha_length);
+
 			cha_n++;
 			divi_f_min_n++;
 			pre_add = this_add;
 		}
 		if (0 == in_str.length) {
-			divi_f_min.push(document.createElement("div"));
-			divi_f_min[divi_f_min_n].style.margin = margin;
-			divi_f_min[divi_f_min_n].style.cssFloat = "right";
-			divi_f_min[divi_f_min_n].style.fontSize = font_size;
-			divi_f_min[divi_f_min_n].style.height = String(parseInt(font_size) * (cha_length + 2)) + "px";
-			the_content.appendChild(divi_f_min[divi_f_min_n]);
+			divi_push(divi_f_min, divi_f_min_n, "", margin, font_size, the_content, cha_length);
 			divi_f_min_n++;
 		}
 	}
 }
+
+function divi_push(divi_f_min, divi_f_min_n, innerHTML, margin, fontSize, the_content, cha_length) {
+			divi_f_min.push(document.createElement("div"));
+			divi_f_min[divi_f_min_n].innerHTML = innerHTML;
+			divi_f_min[divi_f_min_n].style.margin = margin;
+			divi_f_min[divi_f_min_n].style.cssFloat = "right";
+			divi_f_min[divi_f_min_n].style.fontSize = fontSize;
+			divi_f_min[divi_f_min_n].style.height = String(parseInt(fontSize) * (cha_length + 2)) + "px";
+			the_content.appendChild(divi_f_min[divi_f_min_n]);
+}
+
