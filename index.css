@@ -54,9 +54,6 @@ a {
 	margin:0px 10px;
 	float:right;
 }
-#navi_div {
-	background-color:#afc;
-}
 .navi_div_min:hover,.navi_div_child:hover {
 	background-color:#302;
 	cursor:pointer;
@@ -150,4 +147,21 @@ a {
 .map_invert {
 	color:#fce;
 	background-color:#817;
+}
+#bottom_div {
+	position:relative;
+	width:100%;
+	margin-top:20px;
+	background-color:#4e547e;
+}
+#bottom_icon {
+	margin:5px 20px;
+	height:60px;
+    vertical-align:middle;
+    display:inline-block;
+}
+#bottom_content {
+	font-size:14px;
+    vertical-align:middle;
+    display:inline-block;
 }
