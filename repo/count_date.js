@@ -1,9 +1,4 @@
-function count_date_span_function(count_date_span_id, the_date) {
-	var count_date_span = document.getElementById(count_date_span_id);
-	count_date_span.innerHTML = count_date(the_date);
-}
-
-function count_date(the_date) {
+function count_date(count_date_span_id, the_date) {
 	var num = "〇一二三四五六七八九";
 	var unit = "十百千萬";
 
@@ -28,5 +23,5 @@ function count_date(the_date) {
 			result += num.substr(0, 1);
 		}
 	}
-	return result;
+	document.getElementById(count_date_span_id).innerHTML = result;
 }

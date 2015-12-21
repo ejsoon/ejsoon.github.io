@@ -81,12 +81,13 @@ body {
 	text-align:left;
 }
 #bottom_icon {
-	margin:5px 20px;
+	margin:5px 0px 5px 20px;
 	height:60px;
     vertical-align:middle;
     display:inline-block;
 }
 #bottom_content {
+	margin-left:20px;
 	font-size:14px;
 	font-family:Serif;
     vertical-align:middle;
@@ -102,7 +103,7 @@ a {
 	display:none;
 	width:420px;
 	right:30px;
-	bottom:10px;
+	top:160px;
 	font-size:30px;
 }
 #six_big {
@@ -151,16 +152,16 @@ a {
 	position:relative;
 	float:right;
 	width:100%;
-	max-width:965px;
+	max-width:865px;
 	height:400px;
 	margin-top:40px;
 	border-top:2px solid #5c017a;
 	background-color:#ddb;
 	overflow:auto;
 }
-.cc_intro_title {
-	position:relative;
-	float:right;
+#cc_intro_title {
+	position:absolute;
+	right:0px;
 	width:30px;
 	margin-right:20px;
 	background-color:#302;
@@ -168,9 +169,7 @@ a {
 	font-size:30px;
 	display:inline-block;
 }
-.main_ani {
+#cc_intro_content {
 	position:relative;
-	float:right;
-	margin:20px;
-	border-top:4px solid purple;
+	margin:20px 60px 0px 20px;
 }
