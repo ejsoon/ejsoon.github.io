@@ -4,10 +4,9 @@ body {
 }
 #whole_div {
 	width:100%;
-	max-width:900px;
+	max-width:1200px;
 	text-align:left;
 	display:inline-block;
-	background-color:#ddb;
 }
 #head_div {
 	position:relative;
@@ -44,7 +43,7 @@ body {
 }
 .navi_div_child, .navi_div_min {
 	float:right;
-    text-align:center;
+    text-align:left;
     font-size:22px;
 }
 .navi_div_child {
@@ -54,9 +53,28 @@ body {
 	background-color:#254;
 }
 .navi_div_min {
+	position:relative;
 	width:20%;
 	color:white;
 	background-color:#254;
+}
+.navi_div_min_bg {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.navi_div_min_inner {
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.title_inner {
+	position:absolute;
+	top:0px;
+}
+.title_bg {
+	position:relative;
 }
 #aside_div {
 	position:relative;
@@ -76,8 +94,6 @@ body {
 .aside_div_title {
     position:absolute;
     right:0px;
-    width:24px;
-	background-color:#302;
 	color:#fff;
 	font-size:24px;
 	z-index:28;
@@ -85,6 +101,7 @@ body {
 #aside_div_funny_content {
     position:relative;
     margin:10px;
+    height:400px;
     overflow:auto;
 }
 #aside_div_update_content, #aside_div_download_content {
@@ -99,8 +116,8 @@ body {
 .intro_child {
 	float:right;
 	margin-top:20px;
-	margin-left:20px;
-	border-top:3px solid green;
+	margin-left:50px;
+	background-color:#ddb;
 }
 #intro_vertical {
 	background-color:#fac;
