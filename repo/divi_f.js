@@ -152,7 +152,7 @@ function divi_f_go(the_content, font_size, cha_length, margin) {
 				if (br_n < sub_str.length - sum_add) {
 					app_str += sub_str.substr(br_n + sum_add, 1);
 				}
-				if (br_n < cha_length - 1) {
+				if (br_n < cha_length) {
 					app_str += "<br>";
 				}
 				if (count_add.length) {
@@ -176,7 +176,11 @@ function divi_f_go(the_content, font_size, cha_length, margin) {
 			pre_add = this_add;
 		}
 		if (0 == in_str.length) {
-			divi_push(divi_f_min, divi_f_min_n, "", margin, font_size, the_content, cha_length);
+			app_str = "";
+			for (br_n = 0; br_n < cha_length; br_n++) {
+				app_str += "<br>";
+			}
+			divi_push(divi_f_min, divi_f_min_n, app_str, margin, font_size, the_content, cha_length);
 			divi_f_min_n++;
 		}
 	}
@@ -188,7 +192,7 @@ function divi_push(divi_f_min, divi_f_min_n, innerHTML, margin, fontSize, the_co
 			divi_f_min[divi_f_min_n].style.margin = margin;
 			divi_f_min[divi_f_min_n].style.cssFloat = "right";
 			divi_f_min[divi_f_min_n].style.fontSize = fontSize;
-			divi_f_min[divi_f_min_n].style.height = String(parseInt(fontSize) * (cha_length + 2)) + "px";
+			divi_f_min[divi_f_min_n].style.lineHeight = 1;//String(parseInt(fontSize) * (cha_length + 2)) + "px";
 			the_content.appendChild(divi_f_min[divi_f_min_n]);
 }
 
