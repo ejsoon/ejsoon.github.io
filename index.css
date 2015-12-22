@@ -157,12 +157,13 @@ body {
 	text-align:left;
 }
 #bottom_icon {
-	margin:5px 20px;
+	margin:5px 0px 5px 20px;
 	height:60px;
     vertical-align:middle;
     display:inline-block;
 }
 #bottom_content {
+	margin-left:20px;
 	font-size:14px;
 	font-family:Serif;
     vertical-align:middle;
