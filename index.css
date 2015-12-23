@@ -26,7 +26,7 @@ body {
 	height:100%;
 	overflow:hidden;
     text-align:center;
-	background-image:url(pictures/title_bg4.png);
+	background-image:url(pictures/index/title_bg.png);
 }
 #head_in_img {
 	position:relative;
@@ -71,7 +71,7 @@ body {
 }
 #aside_div {
 	position:relative;
-	float:left;
+	float:right;
 	margin-top:20px;
 	width:100%;
 	max-width:450px;
@@ -88,23 +88,49 @@ body {
 	right:10px;
 	top:0px;
 	color:#fff;
-	background-image:url("pictures/index/aside_title_bg.png");
+	background-image:url("pictures/index/aside_title_bg2.png");
 	z-index:88;
 }
 .aside_div_content {
     position:relative;
     margin:40px 20px 15px 15px;
-    padding:20px 50px 20px 0px;
+    padding:20px 60px 20px 10px;
 	border-top:3px solid #303304;
 }
 #aside_img1 {
 	width:100%;
 }
+#intro_whole, #map_whole {
+    position:relative;
+	float:left;
+	margin:20px 20px 20px 0px;
+	padding-left:20px;
+	background-image:url("pictures/index/content_lb.png");
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+.content_title {
+    position:absolute;
+    width:60px;
+    height:180px;
+	right:10px;
+	top:0px;
+	color:#fff;
+	background-image:url("pictures/index/content_title_bg.png");
+	z-index:88;
+}
+#intro_content, #map_content {
+    position:relative;
+	margin:40px 20px 10px 00px;
+    padding:20px 10px 20px 30px;
+	border-top:3px solid #303304;
+}
 .intro_child {
 	float:right;
 	margin-top:20px;
-	margin-left:50px;
+	margin-right:50px;
 	background-color:#ddb;
+	color:#061313;
 }
 #intro_vertical {
 	background-color:#fac;
@@ -112,7 +138,7 @@ body {
 .map {
 	float:right;
 	margin-top:20px;
-	margin-left:20px;
+	margin-right:50px;
 	text-align:center;
 	background-color:#071224;
 }
