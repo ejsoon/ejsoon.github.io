@@ -20,7 +20,7 @@ body {
 	position:relative;
 	margin:0 auto;
 	width:100%;
-	max-width:1366px;
+	max-width:1200px;
 	text-align:center;
 	z-index:1;
 }
@@ -152,7 +152,7 @@ a {
 	position:relative;
 	float:right;
 	width:100%;
-	max-width:865px;
+	max-width:835px;
 	height:400px;
 	margin-top:40px;
 	border-top:2px solid #5c017a;
