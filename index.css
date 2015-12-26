@@ -12,6 +12,7 @@ body {
 	position:relative;
 	margin:0 auto;
 	width:100%;
+	background-image:url(pictures/real_title_bg.png);
 	background-color:#071224;
 }
 #head_out {
@@ -26,7 +27,7 @@ body {
 	height:100%;
 	overflow:hidden;
     text-align:center;
-	background-image:url(pictures/index/title_bg.png);
+	background-image:url(pictures/head_bg.png);
 }
 #head_in_img {
 	position:relative;
@@ -36,6 +37,9 @@ body {
 	height:240px;
 	margin:0px 10px;
 	float:right;
+}
+#navi_div {
+	margin-top:10px;
 }
 .navi_div_min:hover,.navi_div_child:hover {
 	background-color:#302;
@@ -47,9 +51,10 @@ body {
     font-size:22px;
 }
 .navi_div_child {
+	position:relative;
 	width:10%;
 	display:none;
-	color:yellow;
+	color:#032;
 	background-color:#254;
 }
 .navi_div_min {

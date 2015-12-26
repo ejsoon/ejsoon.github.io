@@ -7,12 +7,12 @@ var sixTimerOut;
 
 function flash_six(count_down) {
 	var the_time = 0;
-	if (count_down % 2 == 0) {
-		the_time = 70;
-		six_big.style.display = "none";
-	} else {
+	if (count_down % 2) {
 		the_time = 200;
 		six_big.style.display = "block";
+	} else {
+		the_time = 70;
+		six_big.style.display = "none";
 	}
 	count_down--;
 	if (count_down > 0) {

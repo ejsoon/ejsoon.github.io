@@ -29,6 +29,7 @@ body {
 	margin:0 auto;
 	width:100%;
 	background-color:#071224;
+	background-image:url(../pictures/real_title_bg.png);
 }
 #head_out {
 	position:absolute;
@@ -42,7 +43,8 @@ body {
 	height:100%;
 	overflow:hidden;
     text-align:center;
-	background-image:url(../pictures/title_bg4.png);
+	background-color:#0d726a;
+	background-image:url(../pictures/head_bg.png);
 }
 #head_in_img {
 	position:relative;
@@ -132,12 +134,13 @@ a {
 	color:white;
 	float:right;
 	cursor:crosshair;
+	background-image:url(../pictures/six_single_m.png);
 }
 .six_single {
-	background-image:url(../pictures/six_single.png);
+	background-position:left;
 }
 .six_single_selected, .six_single:hover {
-	background-image:url(../pictures/six_single2.png);
+	background-position:right;
 }
 #yk_index_animation {
 	position:relative;
