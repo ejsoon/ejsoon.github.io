@@ -28,9 +28,8 @@ body {
 	text-align:center;
 }
 #whole_div {
-	width:100%;
 	width:1200px;
-	text-align:left;
+	text-align:center;
 	display:inline-block;
 }
 #head_div {
