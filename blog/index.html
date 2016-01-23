@@ -6,6 +6,24 @@
 		<link rel="stylesheet" type="text/css" href="./index.css"/>
 		<link rel="stylesheet" type="text/css" href="../repo/repo.css"/>
 		<link rel="icon" href="../pictures/icon.png">
+		<style>
+			#whole_div {
+				max-width:1200px;
+				width:100%;
+			}
+			#content_div {
+				margin:20px 0px;
+			}
+			#content_inner {
+				position:relative;
+				float:right;
+			}
+			#content_title {
+				position:relative;
+				float:right;
+				background-color:#a4f8f3;
+			}
+		</style>
 	</head>
 	<body id="body01">
 		<div id="light_effection"></div>
@@ -17,10 +35,14 @@
 					</div>
 				</div>
 				<div id="head_title_out">
-					<a href="http://ejsoon.github.io/"><img id="title_img" src="../pictures/title6.png"></img></a>
+					<a href="../index.html"><img id="title_img" src="../pictures/title6.png"></img></a>
 				</div>
 			</div><!--end head_div--!>
 			<div id="content_div">
+				<div id="content_inner"><div id="content_title"></div>
+內容
+				</div><!-- id="content_inner"-->
+				<div class="clear_float"></div>
 			</div><!--end content_div--!>
 			<div id="bottom_div">
 				<img id="bottom_icon" src="../pictures/icon.png"></img>
@@ -30,6 +52,10 @@
 			</div><!--div id="bottom_div"-->
 		</div><!--end whole_div--!>
 		<footer>
+			<script src="../repo/divi_f.js"></script>
+			<script>divi_f_i("content_inner", "20px", 11, "14px 8px");</script>
+			<script>document.getElementById("content_title").innerHTML = "標題";</script>
+			<script>divi_f_i("content_title", "26px", 0, "34px 24px");</script>
 		</footer>
 	</body>
 </html>

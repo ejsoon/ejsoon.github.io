@@ -12,6 +12,7 @@ function divi_f_c(the_class, font_size, cha_length, margin) {
 
 function divi_f_go(the_content, font_size, cha_length, margin) {
 	var in_str_replace = "";
+	var arr_n = 0; //use many times 
 	var in_str_arr = [];
 	var in_str = "";
 	var sub_str = ""; //use many times 
@@ -56,7 +57,16 @@ function divi_f_go(the_content, font_size, cha_length, margin) {
 
 	in_str_arr = in_str_replace.split("\n");
 	the_content.innerHTML = "";
-	for (var arr_n = 0; arr_n < in_str_arr.length; arr_n++) {
+	//the longest length=cha_length
+	if (cha_length == 0) {
+		for (arr_n = 0; arr_n < in_str_arr.length; arr_n++) {
+			in_str = in_str_arr[arr_n];
+			if (in_str.length > cha_length) {
+				cha_length = in_str.length;
+			}
+		}
+	}
+	for (arr_n = 0; arr_n < in_str_arr.length; arr_n++) {
 		in_str = in_str_arr[arr_n];
 
 		insert_str_arr = in_str.match(/<.*?>/g);
