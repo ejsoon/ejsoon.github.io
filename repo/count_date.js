@@ -1,4 +1,16 @@
-function count_date(count_date_span_id, the_date) {
+function count_date_i(the_id, the_date) {
+	var count_date = document.getElementById(the_id);
+	count_date_go(count_date, the_date);
+}
+function count_date_c(the_class, the_date) {
+	var count_date_class = document.getElementsByClassName(the_class);
+	var max_num = count_date_class.length;
+	for (var num = 0; num < max_num; num++) {
+		count_date_go(count_date_class[num], the_date);
+	}
+}
+
+function count_date_go(count_date, the_date) {
 	var num = "〇一二三四五六七八九";
 	var unit = "十百千萬";
 
@@ -23,5 +35,5 @@ function count_date(count_date_span_id, the_date) {
 			result += num.substr(0, 1);
 		}
 	}
-	document.getElementById(count_date_span_id).innerHTML = result;
+	count_date.innerHTML = result;
 }
