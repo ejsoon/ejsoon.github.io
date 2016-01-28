@@ -355,7 +355,7 @@ function change_input_mode() {
 	}
 	else {
 		input_mode = true;
-		input_mode_button.innerHTML = "EN";
+		input_mode_button.innerHTML = "英";
 	}
 	key_down_count = 0;
 	key_up_count = 0;
@@ -372,10 +372,10 @@ function change_help(the_botton) {
 	if (help_mode) {
 		help_mode = false;
 		help_content_inner.style.display = "none";
-		the_botton.innerHTML = "&#62;&#62;&#62;";
+		the_botton.innerHTML = "〉";
 	} else {
 		help_mode = true;
-		the_botton.innerHTML = "&#60;&#60;&#60;";
+		the_botton.innerHTML = "〈";
 		help_content_inner.style.display = "inline";
 	}
 	input_area.focus();
