@@ -65,7 +65,7 @@
 #aside_img1 {
 	width:100%;
 }
-#intro_whole, #map_whole {
+#intro_whole, #map_whole, #fit_whole {
     position:relative;
 	float:left;
 	margin:20px 0px 0px 0px;
@@ -89,12 +89,24 @@
 	color:white;
 	background-image:url("pictures/index/content_title_bg3.png");
 }
+#fit_content_title {
+	color:white;
+	background-image:url("pictures/index/content_title_bg4.png");
+}
 
-#intro_content, #map_content {
+#intro_content, #map_content, #fit_content {
     position:relative;
 	margin:15px 30px 10px 00px;
     padding:10px 0px 20px 30px;
 	border-top:6px solid #aa7;
+}
+.fit_child {
+	float:right;
+	margin-top:20px;
+	margin-right:50px;
+	padding:25px;
+	background-color:#ecf;
+	background-image:url("pictures/index/fit_content_bg.png");
 }
 #intro_child {
 	float:right;
