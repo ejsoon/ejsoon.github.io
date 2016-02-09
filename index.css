@@ -106,7 +106,15 @@
 	margin-right:50px;
 	padding:25px;
 	background-color:#ecf;
-	background-image:url("pictures/index/fit_content_bg.png");
+}
+#fit_child1 {
+	background-image:url("pictures/index/fit_content_bg1.png");
+}
+#fit_child2 {
+	background-image:url("pictures/index/fit_content_bg2.png");
+}
+#fit_child3 {
+	background-image:url("pictures/index/fit_content_bg3.png");
 }
 #intro_child {
 	float:right;
