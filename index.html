@@ -8,10 +8,10 @@
 		<link rel="icon" href="./pictures/icon.png">
 	</head>
 	<body id="body01">
-		<div id="light_effection"></div>
 		<div id="whole_div">
-			<div id="head_div" style="background-image:url(pictures/real_title_bg.png)">
-				<div id="head_out"><!--absolute--!>
+			<div id="head_div">
+<!--
+				<div id="head_out">
 					<div id="head_in" style="background-image:url(pictures/head_bg.png)">
 						<img id="head_in_img" src="./pictures/head_img_photo.png">
 					</div>
@@ -19,8 +19,10 @@
 				<div id="head_title_out">
 					<a href="http://ejsoon.github.io/"><img id="title_img" src="./pictures/title6.png"></img></a>
 				</div>
+-->
 			</div><!--end head_div--!>
 			<div id="navi_div">
+<!--
 				<div id="navi_div_min1" class="navi_div_min" onclick="navi_onclick(this)"><img class="navi_div_min_bg" src="pictures/index/navi_bg.png"><div class="navi_div_min_inner">文</div></div>
 				<div id="navi_div_min2" class="navi_div_min" onclick="navi_onclick(this)"><img class="navi_div_min_bg" src="pictures/index/navi_bg.png"><div class="navi_div_min_inner">行</div></div>
 				<div id="navi_div_min3" class="navi_div_min" onclick="navi_onclick(this)"><img class="navi_div_min_bg" src="pictures/index/navi_bg.png"><div class="navi_div_min_inner">忠</div></div>
@@ -31,8 +33,9 @@
 				<a class="navi_link" href="cc/index.html" target="__blank"><div id="navi_div_child4" class="navi_div_child"><img class="navi_div_min_bg" src="pictures/star.png"><div class="navi_div_min_inner">道</div></div></a>
 				<a class="navi_link" href="cc/index.html" target="__blank"><div id="navi_div_child5" class="navi_div_child"><img class="navi_div_min_bg" src="pictures/star.png"><div class="navi_div_min_inner">用</div></div></a>
 				<a class="navi_link" href="cc/index.html" target="__blank"><div id="navi_div_child6" class="navi_div_child"><img class="navi_div_min_bg" src="pictures/star.png"><div class="navi_div_min_inner">學</div></div></a>
-				<div class="clear_float"></div>
+-->
 			</div><!--end navi_div--!>
+			<div class="clear_float"></div>
 			<div id="content_div">
 				<div id="aside_div">
 					<div id="aside_div_funny">
@@ -125,13 +128,12 @@
 				</div><!--div id="fit_whole"-->
 				<div class="clear_float"></div>
 			</div><!--end content_div--!>
-			<div id="bottom_div">
-				<img id="bottom_icon" src="./pictures/icon.png"></img>
-				<div class="vertical_middle"></div>
-				<div class="clear_float"></div>
-			</div><!--div id="bottom_div"-->
+			<div id="bottom_div"></div>
 		</div><!--end whole_div--!>
 		<footer>
+			<script src="repo/repo.js"></script>
+			<script>the_template(".");</script>
+
 			<script src="./index.js"></script>
 			<script src="./repo/count_date.js"></script>
 
@@ -146,8 +148,6 @@
 			<script>divi_f_c("map_child", "22px", 9);</script>
 			<script>divi_f_i("intro_child", "26px", 9, "10px");</script>
 			<script>divi_f_c("fit_child", "26px", 9, "10px");</script>
-
-			<script src="repo/repo.js"></script>
 		</footer>
 	</body>
 </html>

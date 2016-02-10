@@ -34,6 +34,11 @@
     height:100%;
     text-align:center;
 }
+#content_div {
+	margin-top:20px;
+	background-color:#e8edb4;
+	background-image:url("pictures/index/content_bg.png");
+}
 #aside_div {
 	position:relative;
 	float:right;
