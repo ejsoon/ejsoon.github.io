@@ -59,10 +59,10 @@ function the_template(route) {
 	head_title_link.id = "head_title_link";
 	title_img.id = "title_img";
 
-	head_div.style.backgroundImage = "url(" + route + "/pictures/real_title_bg.png)";
 	head_in.style.backgroundImage = "url(" + route + "/pictures/head_bg.png)";
 	head_in_img.src = route + "/pictures/head_img_photo.png";
 	title_img.src = route + "/pictures/title6.png";
+	title_img.style.backgroundImage = "url(" + route + "/pictures/real_title_bg.png)";
 	head_title_link.href = route + "/index.html";
 
 	head_in.appendChild(head_in_img);
