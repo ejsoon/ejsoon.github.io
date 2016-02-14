@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>天蒼人頡‧文言</title>
+		<title>天蒼人頡</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-		<link rel="stylesheet" type="text/css" href="./index.css"/>
 		<link rel="stylesheet" type="text/css" href="../repo/repo.css"/>
 		<link rel="icon" href="../pictures/icon.png">
 		<style>
 			#whole_div {
-				max-width:1200px;
 				width:100%;
+				max-width:1200px;
 			}
-			#content_div {
-				margin:20px 0px;
-			}
-			#content_inner {
-				position:relative;
-				float:right;
-			}
-			#content_title {
-				position:relative;
-				float:right;
-				background-color:#a4f8f3;
+			#blog_index {
+				display:inline-block;
+				border:6px double purple;
 			}
 		</style>
 	</head>
 	<body id="body01">
-		<div id="light_effection"></div>
 		<div id="whole_div">
-			<div id="head_div" style="background-image:url(../pictures/real_title_bg.png)">
-				<div id="head_out"><!--absolute--!>
-					<div id="head_in" style="background-image:url(../pictures/head_bg.png)">
-						<img id="head_in_img" src="../pictures/head_img_photo.png">
-					</div>
-				</div>
-				<div id="head_title_out">
-					<a href="../index.html"><img id="title_img" src="../pictures/title6.png"></img></a>
-				</div>
-			</div><!--end head_div--!>
+			<div id="head_div"></div>
+			<div id="navi_div"></div>
+			<div class="clear_float"></div>
 			<div id="content_div">
-				<div id="content_inner"><div id="content_title"></div>
-內容
-				</div><!-- id="content_inner"-->
+				<div id="welcome">大家好，歡迎來到天蒼人頡文言，這裡相當於一個靜態博客，我會挑選一些思緒清晰的文章發表於此。更多的內容在「手工棊盤」論壇。</div>
+				<div id="blog_index">
+				<div id="blog_index_inner">
+大家好，歡迎來到天蒼人頡文言，這裡相當於一個靜態博客，我會挑選一些思緒清晰的文章發表於此。更多的內容在「手工棊盤」論壇。
+</div>
 				<div class="clear_float"></div>
+</div>
 			</div><!--end content_div--!>
-			<div id="bottom_div">
-				<img id="bottom_icon" src="../pictures/icon.png"></img>
-				<div id="bottom_content">e201302012123@gmail.com<br>ejsoon@126.com<br>(+86) 15158888354</div>
-				<div class="vertical_middle"></div>
-				<div class="clear_float"></div>
-			</div><!--div id="bottom_div"-->
+			<div id="bottom_div"></div>
 		</div><!--end whole_div--!>
 		<footer>
+			<script src="../repo/repo.js"></script>
+			<script>the_template("..");</script>
+
+			<script src="../repo/count_date.js"></script>
+			<script>//count_date_i("count_down")</script>
 			<script src="../repo/divi_f.js"></script>
-			<script>divi_f_i("content_inner", "20px", 11, "14px 8px");</script>
-			<script>document.getElementById("content_title").innerHTML = "標題";</script>
-			<script>divi_f_i("content_title", "26px", 0, "34px 24px");</script>
+			<script>divi_f_i("welcome", "26px", 9, "38px 18px");</script>
+			<script>divi_f_i("blog_index_inner", "26px", 9, "38px 18px");</script>
 		</footer>
 	</body>
 </html>
