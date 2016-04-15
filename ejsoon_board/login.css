@@ -1,0 +1,36 @@
+html {
+	height:100%;
+	width: 100%;
+	margin: 0px;
+}
+body {
+	text-align:center;
+	height:100%;
+	width: 100%;
+	margin: 0px;
+}
+form {
+	background-color:#FFFFFF;
+	border-collapse:collapse;
+	border: 1px solid black;
+	color:#000000;
+	display:inline-block;
+	vertical-align:middle;
+	position: relative;
+	padding: 40px;
+}
+.login_submit {
+	background-color:red;
+	color:white;
+}
+.v_middle {
+	display:inline-block;
+	vertical-align:middle;
+	height:100%;
+	width:1px;
+	margin-left:-1px;
+}
+.full_window {
+	height:100%;
+	width:100%;
+}
