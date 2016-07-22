@@ -37,6 +37,7 @@ tr {
 .full_window {
 	height:100%;
 	width:100%;
+	white-space: nowrap;
 }
 .piece {
 	width:40px;
@@ -66,4 +67,108 @@ tr {
 }
 .selected {
   color:green;
+}
+.top {
+	background-color: #aeb;
+}
+.top:after {
+	content: "";
+	display: block;
+	clear:both;
+}
+.top>div {
+	margin:5px;
+}
+.top_photo {
+	float:left;
+	border-right:1px solid black;
+	padding-right:10px;
+}
+.top_photo img {
+	height: 16px;
+	float: left;
+}
+.top_name {
+	float: left;
+	border-right:1px solid black;
+	padding-right:10px;
+}
+.top_state {
+	float: left;
+	border-right:1px solid black;
+	padding-right:10px;
+}
+.top_setting {
+	float:right;
+	position:relative;
+	display:block;
+}
+.top_setting_child {
+	position:relative;
+	float:right;
+	border-left:1px solid black;
+	padding-left:10px;
+	margin:0px 5px;
+}
+.top_setting_logout, .top_setting_user {
+	display:none;
+}
+.desk {
+	
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	/*! display: inline-block; */
+	margin: 30px;
+	float: left;
+	position: relative;
+}
+.second_desk:after {
+	content: "99";
+	display: block;
+	clear:left;
+}
+.third_desk:before {
+		content: "99";
+	display: block;
+	clear:left;
+
+}
+.desk_bottom {
+	
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.desk_area {
+	/*! float: left; */
+	display: inline-block;
+	vertical-align: top;
+}
+.right_section {
+	margin:30px;
+	border-left: 4px solid #27995d;
+	/*! float: left; */
+	padding-left: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+.desk_post {
+	text-align: left;
+}
+.desk_post label{
+	width:200px;
+	display: inline-block;
+	margin: 10px;
+}
+.desk_post hr{
+	border-top: none;
+	border-bottom: 1px solid red;
+}
+.desk_post input{
+	width:175px;
+	margin-right: 10px;
+}
+.bood_type_img {
+	text-align: center;
 }
