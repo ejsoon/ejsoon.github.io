@@ -132,7 +132,7 @@ function the_template(route) {
 	var bottom_link = document.createElement("a");
 	bottom_icon.id = "bottom_icon";
 	bottom_icon.src = route + "/pictures/icon.png";
-	bottom_link.href = "http://ejsoon.jlljxcx.com/phpbb/index.php";
+	bottom_link.href = "http://ejsoon.win/phpbb/index.php";
 	bottom_link.target = "__blank";
 	bottom_link.appendChild(bottom_icon);
 	bottom_div.appendChild(bottom_link);
@@ -140,4 +140,3 @@ function the_template(route) {
 	//content bg
 	body01[0].style.backgroundImage = "url(" + route + "/pictures/index/content_bg.png)";
 }
-
